@@ -7,7 +7,15 @@ import BreadcrumbMenu from '../breadcrumb.component';
 
 const Fish = props => (
   <tr id={props.fish.id}>
-    <td className="text-center">-</td>
+    <td className="text-center">
+      <img 
+        width={50}
+        height={50}
+        className="mr-3"
+        src={"/image/fish/" + props.fish.id + ".webp"}
+        alt="-"
+      />
+    </td>
     <td>
       <Link style={{display:"block"}} to={'/fish/' + props.fish.id }>
         {props.fish.name}
