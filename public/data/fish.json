@@ -1,0 +1,1216 @@
+[{
+    "name": "bitterling",
+    "location": "river",
+    "price": 900,
+    "months": {
+      "north": [{
+        "from": 11,
+        "through": 2
+      }],
+      "south": [{
+        "from": 4,
+        "through": 8
+      }]
+    }
+  },
+  {
+    "name": "pale chub",
+    "location": "river",
+    "price": 160,
+    "time": [{
+      "start": 9,
+      "end": 16
+    }]
+  },
+  {
+    "name": "crucian carp",
+    "location": "river",
+    "price": 160
+  },
+  {
+    "name": "dace",
+    "location": "river",
+    "price": 240,
+    "time": [{
+      "start": 16,
+      "end": 9
+    }]
+  },
+  {
+    "name": "carp",
+    "location": "pond",
+    "price": 300
+  },
+  {
+    "name": "koi",
+    "location": "pond",
+    "price": 4000,
+    "time": [{
+      "start": 16,
+      "end": 9
+    }]
+  },
+  {
+    "name": "goldfish",
+    "location": "pond",
+    "price": 1300
+  },
+  {
+    "name": "pop-eyed goldfish",
+    "location": "pond",
+    "price": 1300,
+    "time": [{
+      "start": 9,
+      "end": 16
+    }]
+  },
+  {
+    "name": "ranchu goldfish",
+    "location": "pond",
+    "price": 4500,
+    "time": [{
+      "start": 9,
+      "end": 16
+    }]
+  },
+  {
+    "name": "killifish",
+    "location": "pond",
+    "price": 300,
+    "months": {
+      "north": [{
+        "from": 3,
+        "through": 7
+      }],
+      "south": [{
+        "from": 9,
+        "through": 1
+      }]
+    }
+  },
+  {
+    "name": "crawfish",
+    "location": "pond",
+    "price": 200,
+    "months": {
+      "north": [{
+        "from": 3,
+        "through": 8
+      }],
+      "south": [{
+        "from": 9,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "soft-shelled turtle",
+    "location": "river",
+    "price": 3750,
+    "time": [{
+      "start": 16,
+      "end": 9
+    }],
+    "months": {
+      "north": [{
+        "from": 7,
+        "through": 8
+      }],
+      "south": [1, 2]
+    }
+  },
+  {
+    "name": "snapping turtle",
+    "location": "river",
+    "price": 5000,
+    "time": [{
+      "start": 21,
+      "end": 4
+    }],
+    "months": {
+      "north": [{
+        "from": 3,
+        "through": 9
+      }],
+      "south": [{
+        "from": 9,
+        "through": 3
+      }]
+    }
+  },
+  {
+    "name": "tadpole",
+    "location": "pond",
+    "price": 100,
+    "months": {
+      "north": [{
+        "from": 2,
+        "through": 6
+      }],
+      "south": [{
+        "from": 8,
+        "through": 0
+      }]
+    }
+  },
+  {
+    "name": "frog",
+    "location": "pond",
+    "price": 120,
+    "months": {
+      "north": [{
+        "from": 4,
+        "through": 7
+      }],
+      "south": [{
+        "from": 10,
+        "through": 1
+      }]
+    }
+  },
+  {
+    "name": "freshwater goby",
+    "location": "river",
+    "price": 400,
+    "time": [{
+      "start": 16,
+      "end": 9
+    }]
+  },
+  {
+    "name": "loach",
+    "location": "river",
+    "price": 400,
+    "months": {
+      "north": [{
+        "from": 2,
+        "through": 4
+      }],
+      "south": [{
+        "from": 8,
+        "through": 10
+      }]
+    }
+  },
+  {
+    "name": "catfish",
+    "location": "pond",
+    "price": 800,
+    "time": [{
+      "start": 16,
+      "end": 9
+    }],
+    "months": {
+      "north": [{
+        "from": 4,
+        "through": 9
+      }],
+      "south": [{
+        "from": 10,
+        "through": 3
+      }]
+    }
+  },
+  {
+    "name": "giant snakehead",
+    "location": "pond",
+    "price": 5500,
+    "time": [{
+      "start": 9,
+      "end": 16
+    }],
+    "months": {
+      "north": [{
+        "from": 5,
+        "through": 7
+      }],
+      "south": [{
+        "from": 11,
+        "through": 1
+      }]
+    }
+  },
+  {
+    "name": "bluegill",
+    "location": "river",
+    "price": 180,
+    "time": [{
+      "start": 9,
+      "end": 16
+    }]
+  },
+  {
+    "name": "yellow perch",
+    "location": "river",
+    "price": 300,
+    "months": {
+      "north": [{
+        "from": 9,
+        "through": 2
+      }],
+      "south": [{
+        "from": 3,
+        "through": 8
+      }]
+    }
+  },
+  {
+    "name": "black bass",
+    "location": "river",
+    "price": 400
+  },
+  {
+    "name": "tilapia",
+    "location": "river",
+    "price": 800,
+    "months": {
+      "north": [{
+        "from": 5,
+        "through": 9
+      }],
+      "south": [{
+        "from": 11,
+        "through": 3
+      }]
+    }
+  },
+  {
+    "name": "pike",
+    "location": "river",
+    "price": 1800,
+    "months": {
+      "north": [{
+        "from": 8,
+        "through": 11
+      }],
+      "south": [{
+        "from": 2,
+        "through": 5
+      }]
+    }
+  },
+  {
+    "name": "pond smelt",
+    "location": "river",
+    "price": 400,
+    "months": {
+      "north": [{
+        "from": 11,
+        "through": 1
+      }],
+      "south": [{
+        "from": 5,
+        "through": 7
+      }]
+    }
+  },
+  {
+    "name": "sweetfish",
+    "location": "river",
+    "price": 900,
+    "months": {
+      "north": [{
+        "from": 6,
+        "through": 8
+      }],
+      "south": [{
+        "from": 11,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "cherry salmon",
+    "location": "river (clifftop)",
+    "price": 1000,
+    "time": [{
+      "start": 16,
+      "end": 9
+    }],
+    "months": {
+      "north": [{
+          "from": 2,
+          "through": 5
+        },
+        {
+          "from": 8,
+          "through": 10
+        }
+      ],
+      "south": [{
+          "from": 2,
+          "through": 4
+        },
+        {
+          "from": 8,
+          "through": 11
+        }
+      ]
+    }
+  },
+  {
+    "name": "char",
+    "location": "river (clifftop)",
+    "price": 3800,
+    "time": [{
+      "start": 16,
+      "end": 9
+    }],
+    "months": {
+      "north": [{
+          "from": 2,
+          "through": 5
+        },
+        {
+          "from": 8,
+          "through": 10
+        }
+      ],
+      "south": [{
+          "from": 2,
+          "through": 4
+        },
+        {
+          "from": 8,
+          "through": 11
+        }
+      ]
+    }
+  },
+  {
+    "name": "golden trout",
+    "location": "river (clifftop)",
+    "price": 15000,
+    "time": [{
+      "start": 16,
+      "end": 9
+    }],
+    "months": {
+      "north": [{
+          "from": 2,
+          "through": 4
+        },
+        {
+          "from": 8,
+          "through": 10
+        }
+      ],
+      "south": [{
+          "from": 2,
+          "through": 4
+        },
+        {
+          "from": 8,
+          "through": 10
+        }
+      ]
+    }
+  },
+  {
+    "name": "stringfish",
+    "location": "river (clifftop)",
+    "price": 15000,
+    "time": [{
+      "start": 16,
+      "end": 9
+    }],
+    "months": {
+      "north": [{
+        "from": 11,
+        "through": 2
+      }],
+      "south": [{
+        "from": 5,
+        "through": 8
+      }]
+    }
+  },
+  {
+    "name": "salmon",
+    "location": "river (mouth)",
+    "price": 700,
+    "months": {
+      "north": [{
+        "in": 8
+      }],
+      "south": [{
+        "in": 2
+      }]
+    }
+  },
+  {
+    "name": "king salmon",
+    "location": "river (mouth)",
+    "price": 1800,
+    "months": {
+      "north": [{
+        "in": 8
+      }],
+      "south": [{
+        "in": 2
+      }]
+    }
+  },
+  {
+    "name": "mitten crab",
+    "location": "river",
+    "price": 2000,
+    "time": [{
+      "start": 16,
+      "end": 9
+    }],
+    "months": {
+      "north": [{
+        "from": 8,
+        "through": 10
+      }],
+      "south": [{
+        "from": 2,
+        "through": 4
+      }]
+    }
+  },
+  {
+    "name": "guppy",
+    "location": "river",
+    "price": 1300,
+    "time": [{
+      "start": 9,
+      "end": 16
+    }],
+    "months": {
+      "north": [{
+        "from": 3,
+        "through": 10
+      }],
+      "south": [{
+          "from": 0,
+          "through": 4
+        },
+        {
+          "from": 9,
+          "through": 10
+        }
+      ]
+    }
+  },
+  {
+    "name": "nibble fish",
+    "location": "river",
+    "price": 1500,
+    "time": [{
+      "start": 9,
+      "end": 16
+    }],
+    "months": {
+      "north": [{
+        "from": 4,
+        "through": 8
+      }],
+      "south": [{
+        "from": 10,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "angelfish",
+    "location": "river",
+    "price": 3000,
+    "time": [{
+      "start": 16,
+      "end": 9
+    }],
+    "months": {
+      "north": [{
+        "from": 4,
+        "through": 9
+      }],
+      "south": [{
+        "from": 10,
+        "through": 3
+      }]
+    }
+  },
+  {
+    "name": "betta",
+    "location": "river",
+    "price": 2500,
+    "time": [{
+      "start": 9,
+      "end": 16
+    }],
+    "months": {
+      "north": [{
+        "from": 4,
+        "through": 9
+      }],
+      "south": [{
+        "from": 10,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "neon tetra",
+    "location": "river",
+    "price": 500,
+    "time": [{
+      "start": 9,
+      "end": 16
+    }],
+    "months": {
+      "north": [{
+        "from": 3,
+        "through": 10
+      }],
+      "south": [{
+        "from": 9,
+        "through": 4
+      }]
+    }
+  },
+  {
+    "name": "rainbowfish",
+    "location": "river",
+    "price": 800,
+    "time": [{
+      "start": 9,
+      "end": 16
+    }],
+    "months": {
+      "north": [{
+        "from": 4,
+        "through": 9
+      }],
+      "south": [{
+        "from": 10,
+        "through": 3
+      }]
+    }
+  },
+  {
+    "name": "piranha",
+    "location": "river",
+    "price": 2500,
+    "time": [{
+        "start": 9,
+        "end": 16
+      },
+      {
+        "start": 21,
+        "end": 4
+      }
+    ],
+    "months": {
+      "north": [{
+        "from": 5,
+        "through": 8
+      }],
+      "south": [{
+        "from": 11,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "arowana",
+    "location": "river",
+    "price": 10000,
+    "time": [{
+      "start": 16,
+      "end": 9
+    }],
+    "months": {
+      "north": [{
+        "from": 5,
+        "through": 8
+      }],
+      "south": [{
+        "from": 11,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "dorado",
+    "location": "river",
+    "price": 15000,
+    "time": [{
+      "start": 4,
+      "end": 21
+    }],
+    "months": {
+      "north": [{
+        "from": 5,
+        "through": 8
+      }],
+      "south": [{
+        "from": 11,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "gar",
+    "location": "pond",
+    "price": 6000,
+    "time": [{
+      "start": 16,
+      "end": 9
+    }],
+    "months": {
+      "north": [{
+        "from": 5,
+        "through": 8
+      }],
+      "south": [{
+        "from": 11,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "arapaima",
+    "location": "river",
+    "price": 10000,
+    "time": [{
+      "start": 16,
+      "end": 9
+    }],
+    "months": {
+      "north": [{
+        "from": 5,
+        "through": 8
+      }],
+      "south": [{
+        "from": 11,
+        "through": 3
+      }]
+    }
+  },
+  {
+    "name": "saddled bichir",
+    "location": "river",
+    "price": 4000,
+    "time": [{
+      "start": 21,
+      "end": 4
+    }],
+    "months": {
+      "north": [{
+        "from": 5,
+        "through": 8
+      }],
+      "south": [{
+        "from": 11,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "sturgeon",
+    "location": "river (mouth)",
+    "price": 10000,
+    "months": {
+      "north": [{
+        "from": 8,
+        "through": 2
+      }],
+      "south": [{
+        "from": 2,
+        "through": 8
+      }]
+    }
+  },
+  {
+    "name": "sea butterfly",
+    "location": "sea",
+    "price": 1000,
+    "months": {
+      "north": [{
+        "from": 11,
+        "through": 2
+      }],
+      "south": [{
+        "from": 5,
+        "through": 8
+      }]
+    }
+  },
+  {
+    "name": "seahorse",
+    "location": "sea",
+    "price": 1100,
+    "months": {
+      "north": [{
+        "from": 3,
+        "through": 10
+      }],
+      "south": [{
+        "from": 9,
+        "through": 4
+      }]
+    }
+  },
+  {
+    "name": "clownfish",
+    "location": "sea",
+    "price": 650,
+    "months": {
+      "north": [{
+        "from": 3,
+        "through": 8
+      }],
+      "south": [{
+        "from": 9,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "surgeonfish",
+    "location": "sea",
+    "price": 1000,
+    "months": {
+      "north": [{
+        "from": 3,
+        "through": 8
+      }],
+      "south": [{
+        "from": 9,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "butterfly fish",
+    "location": "sea",
+    "price": 1000,
+    "months": {
+      "north": [{
+        "from": 3,
+        "through": 8
+      }],
+      "south": [{
+        "from": 9,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "napoleonfish",
+    "location": "sea",
+    "price": 10000,
+    "time": [{
+      "start": 4,
+      "end": 21
+    }],
+    "months": {
+      "north": [{
+        "from": 6,
+        "through": 7
+      }],
+      "south": [{
+        "from": 0,
+        "through": 1
+      }]
+    }
+  },
+  {
+    "name": "zebra turkeyfish",
+    "location": "sea",
+    "price": 500,
+    "months": {
+      "north": [{
+        "from": 3,
+        "through": 10
+      }],
+      "south": [{
+        "from": 9,
+        "through": 4
+      }]
+    }
+  },
+  {
+    "name": "blowfish",
+    "location": "sea",
+    "price": 5000,
+    "time": [{
+      "start": 21,
+      "end": 4
+    }],
+    "months": {
+      "north": [{
+        "from": 10,
+        "through": 1
+      }],
+      "south": [{
+        "from": 4,
+        "through": 7
+      }]
+    }
+  },
+  {
+    "name": "puffer fish",
+    "location": "sea",
+    "price": 250,
+    "months": {
+      "north": [{
+        "from": 10,
+        "through": 1
+      }],
+      "south": [{
+        "from": 4,
+        "through": 7
+      }]
+    }
+  },
+  {
+    "name": "anchovy",
+    "location": "sea",
+    "price": 200,
+    "time": [{
+      "start": 4,
+      "end": 21
+    }]
+  },
+  {
+    "name": "horse mackeral",
+    "location": "sea",
+    "price": 150
+  },
+  {
+    "name": "barred knifejaw",
+    "location": "sea",
+    "price": 5000,
+    "months": {
+      "north": [{
+        "from": 2,
+        "through": 10
+      }],
+      "south": [{
+        "from": 8,
+        "through": 4
+      }]
+    }
+  },
+  {
+    "name": "sea bass",
+    "location": "sea",
+    "price": 400
+  },
+  {
+    "name": "red snapper",
+    "location": "sea",
+    "price": 3000
+  },
+  {
+    "name": "dab",
+    "location": "sea",
+    "price": 300,
+    "months": {
+      "north": [{
+        "from": 9,
+        "through": 3
+      }],
+      "south": [{
+        "from": 7,
+        "through": 9
+      }]
+    }
+  },
+  {
+    "name": "olive flounder",
+    "location": "sea",
+    "price": 800
+  },
+  {
+    "name": "squid",
+    "location": "sea",
+    "price": 500,
+    "months": {
+      "north": [{
+        "from": 11,
+        "through": 7
+      }],
+      "south": [{
+        "from": 5,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "moray eel",
+    "location": "sea",
+    "price": 2000,
+    "months": {
+      "north": [{
+        "from": 7,
+        "through": 9
+      }],
+      "south": [{
+        "from": 1,
+        "through": 3
+      }]
+    }
+  },
+  {
+    "name": "ribbon eel",
+    "location": "sea",
+    "price": 600,
+    "months": {
+      "north": [{
+        "from": 5,
+        "through": 9
+      }],
+      "south": [{
+        "from": 11,
+        "through": 3
+      }]
+    }
+  },
+  {
+    "name": "tuna",
+    "location": "pier",
+    "price": 7000,
+    "months": {
+      "north": [{
+        "from": 10,
+        "through": 3
+      }],
+      "south": [{
+        "from": 4,
+        "through": 9
+      }]
+    }
+  },
+  {
+    "name": "blue marlin",
+    "location": "pier",
+    "price": 10000,
+    "months": {
+      "north": [{
+          "from": 10,
+          "through": 3
+        },
+        {
+          "from": 6,
+          "through": 8
+        }
+      ],
+      "south": [{
+          "from": 0,
+          "through": 2
+        },
+        {
+          "from": 4,
+          "through": 9
+        }
+      ]
+    }
+  },
+  {
+    "name": "giant trevally",
+    "location": "pier",
+    "price": 4500,
+    "months": {
+      "north": [{
+        "from": 4,
+        "through": 8
+      }],
+      "south": [{
+        "from": 10,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "mahi-mahi",
+    "location": "pier",
+    "price": 6000,
+    "months": {
+      "north": [{
+        "from": 4,
+        "through": 9
+      }],
+      "south": [{
+        "from": 10,
+        "through": 3
+      }]
+    }
+  },
+  {
+    "name": "ocean sunfish",
+    "location": "sea",
+    "price": 4000,
+    "time": [{
+      "start": 4,
+      "end": 21
+    }],
+    "months": {
+      "north": [{
+        "from": 6,
+        "through": 8
+      }],
+      "south": [{
+        "from": 0,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "ray",
+    "location": "sea",
+    "price": 3000,
+    "time": [{
+      "start": 4,
+      "end": 21
+    }],
+    "months": {
+      "north": [{
+        "from": 7,
+        "through": 10
+      }],
+      "south": [{
+        "from": 1,
+        "through": 4
+      }]
+    }
+  },
+  {
+    "name": "saw shark",
+    "location": "sea",
+    "price": 12000,
+    "time": [{
+      "start": 16,
+      "end": 9
+    }],
+    "months": {
+      "north": [{
+        "from": 5,
+        "through": 8
+      }],
+      "south": [{
+        "from": 11,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "hammerhead shark",
+    "location": "sea",
+    "price": 8000,
+    "time": [{
+      "start": 16,
+      "end": 9
+    }],
+    "months": {
+      "north": [{
+        "from": 5,
+        "through": 8
+      }],
+      "south": [{
+        "from": 11,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "great white shark",
+    "location": "sea",
+    "price": 15000,
+    "time": [{
+      "start": 16,
+      "end": 9
+    }],
+    "months": {
+      "north": [{
+        "from": 5,
+        "through": 8
+      }],
+      "south": [{
+        "from": 11,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "whale shark",
+    "location": "sea",
+    "price": 13000,
+    "months": {
+      "north": [{
+        "from": 5,
+        "through": 8
+      }],
+      "south": [{
+        "from": 11,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "suckerfish",
+    "location": "sea",
+    "price": 1500,
+    "months": {
+      "north": [{
+        "from": 5,
+        "through": 8
+      }],
+      "south": [{
+        "from": 1,
+        "through": 2
+      }]
+    }
+  },
+  {
+    "name": "football fish",
+    "location": "sea",
+    "price": 2500,
+    "time": [{
+      "start": 16,
+      "end": 9
+    }],
+    "months": {
+      "north": [{
+        "from": 10,
+        "through": 2
+      }],
+      "south": [{
+        "from": 4,
+        "through": 8
+      }]
+    }
+  },
+  {
+    "name": "oarfish",
+    "location": "sea",
+    "price": 9000,
+    "months": {
+      "north": [{
+        "from": 11,
+        "through": 4
+      }],
+      "south": [{
+        "from": 5,
+        "through": 10
+      }]
+    }
+  },
+  {
+    "name": "barreleye",
+    "location": "sea",
+    "price": 15000,
+    "time": [{
+      "start": 21,
+      "end": 4
+    }]
+  },
+  {
+    "name": "coelacanth",
+    "location": "sea (rainy days)",
+    "price": 15000
+  }
+]
