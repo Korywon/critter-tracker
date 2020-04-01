@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { Breadcrumb } from 'react-bootstrap';
 
 const Crumb = props => (
-  <li className="breadcrumb-item">
-    <Link to={props.path.pathTo}>{props.path.pathname}</Link>
-  </li>
+  <Breadcrumb.Item componentclass={Link} href={props.path.pathTo}>
+    {props.path.pathname}
+  </Breadcrumb.Item>
 );
 
-export default class Breadcrumb extends Component {
+export default class BreadcrumbMenu extends Component {
   render () {
     return (
-      <nav aria-label="breadcrumb">
-        <ol className="breadcrumb">
+      <Breadcrumb>
           { this.breadcrumbItems() }
-        </ol>
-      </nav>
+      </Breadcrumb>
     );
   }
 
@@ -24,6 +23,9 @@ export default class Breadcrumb extends Component {
     });
   }
 
+  /*
+   * Gets the pathnames for the breadcrumb links and text. 
+   */
   getPaths () {
     let pathnames = window.location.pathname.split(/\//);
     let paths = [];

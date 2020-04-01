@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-  faBug, faFish, faLeaf, faQuestionCircle, faHome 
+  faBug, faFish, faLeaf, faQuestionCircle, faHome
 } from '@fortawesome/free-solid-svg-icons';
 
 export default class NavbarMenu extends Component {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-import Breadcrumb from '../breadcrumb.component';
+import BreadcrumbMenu from '../breadcrumb.component';
 
 const Fish = props => (
   <tr id={props.fish.id}>
@@ -39,7 +39,7 @@ export default class FishList extends Component {
             Fish list under construction!
           </p>
         </div>
-        <Breadcrumb />
+        <BreadcrumbMenu />
         <table className="table table-sm table-bordered table-hover
           table-striped">
           <thead className="thead-dark">

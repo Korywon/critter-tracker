@@ -1,19 +1,29 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Media } from 'react-bootstrap';
 
-import Breadcrumb from '../breadcrumb.component';
+import BreadcrumbMenu from '../breadcrumb.component';
 
 const Fish = props => {
   return (
     <div>
-      <h4>{ props.fish.name }</h4>
-      <p>location: {props.fish.location}</p>
-      <p>price: {props.fish.price}</p>
-      <p>months: </p>
-      <p></p>
-      <p></p>
-      <Link to={'/fish/' + props.fish.id}>Link</Link>
+      <Media>
+        <img 
+          width={100}
+          height={100}
+          className="mr-3"
+          src={"/image/fish/" + props.fish.id + ".webp"}
+          alt={props.fish.name}
+        />
+        <Media.Body>
+          <h4>{props.fish.name}</h4>
+          <p>{props.fish.location}</p>
+          <p>{props.fish.price}</p>
+          <p>-</p>
+          <p>-</p>
+          <p>-</p>
+        </Media.Body>
+      </Media>
     </div>
   );
 }
@@ -32,7 +42,7 @@ export default class FishInfo extends Component {
           Fish info under construction!
         </div>
         <br />
-        <Breadcrumb />
+        <BreadcrumbMenu />
         { this.fishInfo() }
       </div>
     );
