@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import About from './components/about.component';
-import Navbar from './components/navbar.component';
+import NavbarMenu from './components/navbar-menu.component';
 
 import BugList from './components/bug/bug-list.component';
 import FishInfo from './components/fish/fish-info.component';
@@ -15,7 +15,7 @@ import PageNotFound from "./components/page-not-found.component";
 function App() {
   return (
     <Router>
-      <Navbar />
+      <NavbarMenu />
       <br />
       <Switch>
         <Route path="/" exact component={Home} />

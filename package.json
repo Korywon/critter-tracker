@@ -12,6 +12,8 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "popper": "^1.0.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
     "react-bootstrap-table": "^4.3.1",

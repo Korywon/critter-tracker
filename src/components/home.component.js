@@ -6,17 +6,7 @@ import {
   faFish, faBug, faQuestionCircle
 } from '@fortawesome/free-solid-svg-icons';
 
-const styles = {
-  noTextDecoration: {
-    textDecoration: "none"
-  },
-
-  menuItem: {
-    "&:hover": {
-      background: "#c4c4c4"
-    }
-  }
-}
+import styles from './home.component.css';
 
 export default class Home extends Component {
   render () {
@@ -24,7 +14,7 @@ export default class Home extends Component {
       <div className="container">
         <div className="row">
           <div className="col-sm-6">
-            <Link to="/bug" style={styles.noTextDecoration}>
+            <Link to="/bug">
               <div className="jumbotron jumbotron-fluid bg-success text-white">
                 <div className="container">
                   <h1 className="display-4 text-center">
@@ -35,7 +25,7 @@ export default class Home extends Component {
             </Link>
           </div>
           <div className="col-sm-6">
-            <Link to="/fish" style={styles.noTextDecoration}>
+            <Link to="/fish">
               <div className="jumbotron jumbotron-fluid bg-primary text-white">
                 <div className="container">
                   <h1 className="display-4 text-center">
@@ -48,7 +38,7 @@ export default class Home extends Component {
         </div>
         <div className="row">
           <div className="col-sm-12">
-            <Link to="/about" style={styles.noTextDecoration}>
+            <Link to="/about">
               <div className="jumbotron jumbotron-fluid bg-secondary
                 text-white">
                 <div className="container">
