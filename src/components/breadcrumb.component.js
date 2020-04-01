@@ -48,6 +48,8 @@ export default class Breadcrumb extends Component {
         pathnameRaw: currPathname,
         pathTo: tempPathTo
       });
+
+      return null;
     });
 
     return paths;
