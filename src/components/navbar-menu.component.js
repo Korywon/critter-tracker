@@ -10,7 +10,7 @@ import {
 export default class NavbarMenu extends Component {
   render () {
     return (
-      <Navbar bg="success" variant="dark" expand="lg" sticky="top">
+      <Navbar bg="success" variant="dark" expand="md" sticky="top">
         <Navbar.Brand as={Link} to="/">
           <FontAwesomeIcon icon={faLeaf} /> Critter Tracker
         </Navbar.Brand>
