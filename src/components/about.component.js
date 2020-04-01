@@ -11,10 +11,13 @@ export default class About extends Component {
           <p>
             About under construction!
           </p>
-          <a href="https://www.github.com/korywon/critter-tracker"
+          <a className="text-dark" 
+            href="https://www.github.com/korywon/critter-tracker"
             rel="noopener noreferrer" target="_blank">
             <FontAwesomeIcon icon={faGithub} size="6x" />
           </a>
+          <br />
+          GitHub
         </div>
       </div>
     );
