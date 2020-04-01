@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
+import { Table } from 'react-bootstrap';
 import BreadcrumbMenu from '../breadcrumb.component';
 
 const Fish = props => (
@@ -40,8 +41,7 @@ export default class FishList extends Component {
           </p>
         </div>
         <BreadcrumbMenu />
-        <table className="table table-sm table-bordered table-hover
-          table-striped">
+        <Table striped bordered hover responsive size="sm">
           <thead className="thead-dark">
             <tr>
               <th>Icon</th>
@@ -56,7 +56,7 @@ export default class FishList extends Component {
           <tbody>
             { this.fishList() }
           </tbody>
-        </table>
+        </Table>
       </div>
     );
   }
