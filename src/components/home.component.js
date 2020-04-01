@@ -6,8 +6,6 @@ import {
   faFish, faBug, faQuestionCircle
 } from '@fortawesome/free-solid-svg-icons';
 
-import styles from './home.component.css';
-
 export default class Home extends Component {
   render () {
     return (
