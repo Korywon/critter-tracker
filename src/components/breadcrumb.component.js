@@ -40,6 +40,7 @@ export default class BreadcrumbMenu extends Component {
 
       if (!tempPathname.localeCompare('') && index === 0) {
         tempPathname = 'home';
+        tempPathTo = '/';
       }
 
       /*
