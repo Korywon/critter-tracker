@@ -1,5 +1,4 @@
 import MonthUtility from '../../utility/month-utility';
-import '@testing-library/jest-dom';
 
 test('month number 0 to january', () => {
   const monthNumber = 0;
