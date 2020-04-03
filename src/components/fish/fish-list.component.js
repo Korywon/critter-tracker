@@ -56,7 +56,8 @@ const Badges = props => {
   let badges = [];                                            // array of badges
 
   /*
-   * Badges for new, available, soon, or unavailable. 
+   * Badges for new, available, soon, or unavailable.
+   * TODO: Generalize cases for different hemispheres.
    */
   if (props.fish.status.north.new) {
     badges.push(<><Badge pill variant="primary">new</Badge>&nbsp;</>);
