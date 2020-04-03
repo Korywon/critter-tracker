@@ -19,7 +19,7 @@ export default class MonthUtility {
      */
     if (currMonth < 0 || currMonth > 11) {
       console.error(
-        `[ ERROR ]: Current month (${currMonth})is invalid!`
+        `[ ERROR ]: Current month (${currMonth}) is invalid!`
       );
       return false;
     }
