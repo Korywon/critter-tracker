@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { Breadcrumb } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
 const Crumb = props => (
-  <Breadcrumb.Item componentclass={Link} href={props.path.pathTo}>
-    {props.path.pathname}
-  </Breadcrumb.Item>
+  <LinkContainer to={props.path.pathTo}>
+    <Breadcrumb.Item>
+      {props.path.pathname}
+    </Breadcrumb.Item>
+  </LinkContainer>
 );
 
 export default class BreadcrumbMenu extends Component {
