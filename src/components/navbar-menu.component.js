@@ -30,11 +30,6 @@ export default class NavbarMenu extends Component {
               <FontAwesomeIcon icon={faQuestionCircle} /> About
             </Nav.Link>
           </Nav>
-          <Nav>
-            <span className="text-white">
-              Time
-            </span>
-          </Nav>
         </Navbar.Collapse>
       </Navbar>
     );
