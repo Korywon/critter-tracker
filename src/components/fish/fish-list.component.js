@@ -56,12 +56,10 @@ const Badges = props => {
   let badges = [];                                            // array of badges
 
   /*
-   * If the fish is currently available. 
+   * Badges for new, available, soon, or unavailable. 
    */
   if (props.fish.status.north.new) {
-    badges.push(
-      <><Badge pill variant="primary">new</Badge>&nbsp;</>
-    );
+    badges.push(<><Badge pill variant="primary">new</Badge>&nbsp;</>);
   } else if (props.fish.status.north.available) {
     badges.push(<><Badge pill variant="success">available</Badge>&nbsp;</>);
   } else if(props.fish.status.north.soon) {
