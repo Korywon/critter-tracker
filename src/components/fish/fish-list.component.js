@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
+import MonthUtility from '../../utility/month-utility';
+
 import { Badge, Table } from 'react-bootstrap';
 import BreadcrumbMenu from '../breadcrumb.component';
 
@@ -25,17 +27,19 @@ const Fish = props => {
         </Link>
         { <Badges fish={props.fish} key={props.fish.id} /> }
       </td>
-      <td>long</td>
       <td>
-        {props.fish.location}
+        { props.fish.size }
+      </td>
+      <td>
+        { props.fish.location }
       </td>
       <td>
         { props.fish.price }
       </td>
       <td>
-        <Badge pill variant="dark">North</Badge> n/a-n/a
+        north
         <hr />
-        <Badge pill variant="dark">South</Badge> n/a-n/a
+        south
       </td>
       <td>
         n/a-n/a
@@ -44,30 +48,40 @@ const Fish = props => {
   );
 }
 
+/**
+ * Prop that returns badges based on the hemisphere and status.
+ * @param {Object} props 
+ */
 const Badges = props => {
   let badges = [];                                            // array of badges
 
   /*
    * If the fish is currently available. 
    */
-  if (props.fish.available) {
-    badges.push(<><Badge variant="success">available</Badge>&nbsp;</>);
+  if (props.fish.status.north.new) {
+    badges.push(
+      <><Badge pill variant="primary">new</Badge>&nbsp;</>
+    );
+  } else if (props.fish.status.north.available) {
+    badges.push(<><Badge pill variant="success">available</Badge>&nbsp;</>);
+  } else if(props.fish.status.north.soon) {
+    badges.push(<><Badge pill variant="info">soon</Badge>&nbsp;</>);
   } else {
-    badges.push(<><Badge variant="secondary">unavailable</Badge>&nbsp;</>);
+    badges.push(<><Badge pill variant="secondary">unavailable</Badge>&nbsp;</>);
   }
 
   /*
    * If this is the last hour to catch the fish. 
    */
-  if (props.fish.lastHour) {
-    badges.push(<><Badge variant="warning">last hour</Badge>&nbsp;</>);
+  if (props.fish.status.north.lastHour) {
+    badges.push(<><Badge pill variant="warning">last hour</Badge>&nbsp;</>);
   }
 
   /*
    * If this is the last month to catch the fish. 
    */
-  if (props.fish.lastMonth) {
-    badges.push(<><Badge variant="danger">last month</Badge>&nbsp;</>);
+  if (props.fish.status.north.lastMonth) {
+    badges.push(<><Badge pill variant="danger">last month</Badge>&nbsp;</>);
   }
 
   return(
@@ -98,10 +112,10 @@ export default class FishList extends Component {
             <thead className="thead-dark">
               <tr>
                 <th width={50}>Icon</th>
-                <th width={150}>Name</th>
+                <th width={220}>Name</th>
                 <th width={50}>Size</th>
-                <th width={80}>Location</th>
-                <th width={80}>Price</th>
+                <th width={75}>Location</th>
+                <th width={75}>Price</th>
                 <th>Months</th>
                 <th>Time</th>
               </tr>
@@ -123,10 +137,17 @@ export default class FishList extends Component {
         /*
          * Creates id key for each object by replacing space chars with '_'
          * chars.
+         * TODO: Move the status evaluation outside of this function or have a
+         * way to determine which hemisphere the user is in before.
          */
         for (var index in tempResponse.data) {
           tempResponse.data[index].id =
             tempResponse.data[index].name.replace(/ /g, '_');
+          tempResponse.data[index].status =
+            MonthUtility.getStatusHemispheres(
+              new Date().getMonth(),
+              tempResponse.data[index].months
+          );
         }
 
         /*
