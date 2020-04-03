@@ -65,7 +65,7 @@ const Badges = props => {
   } else if (props.fish.status.north.available) {
     badges.push(<><Badge pill variant="success">available</Badge>&nbsp;</>);
   } else if(props.fish.status.north.soon) {
-    badges.push(<><Badge pill variant="info">soon</Badge>&nbsp;</>);
+    badges.push(<><Badge pill variant="info">next month</Badge>&nbsp;</>);
   } else {
     badges.push(<><Badge pill variant="secondary">unavailable</Badge>&nbsp;</>);
   }
