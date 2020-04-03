@@ -3,8 +3,63 @@ export default class MonthUtility {
    * Returns the next month after the given month and wraps after 11.
    * @param {Number} currMonth 
    */
-  static nextMonthWrap(currMonth) {
+  static getNextMonth(currMonth) {
     return currMonth + 1 > 11 ? 0 : currMonth + 1;
+  }
+
+  /**
+   * Returns true if current month is in the timespan. False if not and if
+   * the currMonth and timeSpan arguments are invalid.
+   * @param {Number} currMonth 
+   * @param {Number} timeSpan 
+   */
+  static inTimeSpan(currMonth, timeSpan) {
+    /*
+     * If current month is out of the range of valid month numbers.
+     */
+    if (currMonth < 0 || currMonth > 11) {
+      console.error(
+        `[ ERROR ]: Current month (${currMonth})is invalid!`
+      );
+      return false;
+    }
+
+    /*
+     * If time span from is out of the range of valid month numbers.
+     */
+    if (timeSpan.from < 0 || timeSpan.from > 11) {
+      console.error(`[ ERROR ]: Time span from (${timeSpan.from}) is invalid!`);
+      return false;
+    }
+
+    /*
+     * If time span through is out of the range of valid month numbers.
+     */
+    if (timeSpan.through < 0 || timeSpan.through > 11) {
+      console.error(
+        `[ ERROR ]: Time span through (${timeSpan.through}) is invalid!`
+      );
+      return false;
+    }
+      
+    /*
+     * If the range goes over into the next year, e.g. December to Jenuary. Else
+     * if the range is between the two values.
+     */
+    if (timeSpan.from > timeSpan.through) {
+      /*
+       * If the current month is between the two values. 
+       */
+      if (currMonth >= timeSpan.from || currMonth <= timeSpan.through) {
+        return true;
+      }
+    } else if (currMonth >= timeSpan.from && currMonth <= timeSpan.through) {
+      return true;
+    } else if (timeSpan.from === timeSpan.through) {
+      return true;
+    }
+
+    return false;
   }
 
   /**
@@ -12,8 +67,8 @@ export default class MonthUtility {
    * @param {Number} currMonth 
    * @param {Object} months 
    */
-  static getStatusHemispheres (currMonth, months) {
-    const nextMonth = this.nextMonthWrap(currMonth);
+  static getStatusTimeSpans (currMonth, timeSpans) {
+    const nextMonth = this.getNextMonth(currMonth);
     let status = {
       available: false,
       lastMonth: false,
@@ -21,7 +76,7 @@ export default class MonthUtility {
       soon: false
     };
 
-    if (months.length === 0) {
+    if (!timeSpans || timeSpans.length === 0) {
       status.available = true;
       return status;
     }
@@ -30,8 +85,8 @@ export default class MonthUtility {
      * Loops through each time span in the months array and assigns values for
      * the statuses object.
      */
-    for (let index in months) {
-      let span = months[index];
+    for (let index in timeSpans) {
+      let span = timeSpans[index];
 
       /*
        * If time span object has from and through key, or has in key.
@@ -40,7 +95,7 @@ export default class MonthUtility {
         /*
          * If the current month is within the time span.
          */
-        if (span.from >= currMonth && currMonth <= span.through) {
+        if (this.inTimeSpan(currMonth, span)) {
           status.available = true;
         }
 
@@ -97,7 +152,7 @@ export default class MonthUtility {
    * @param {*} currMonth 
    * @param {*} months 
    */
-  static getStatusMonths(currMonth, months) {
+  static getStatusHemispheres(currMonth, months) {
     let status = {
       north: {},
       south: {}
@@ -109,8 +164,8 @@ export default class MonthUtility {
       months.south = [];
     }
 
-    status.north = this.getStatusHemispheres(currMonth, months.north);
-    status.south = this.getStatusHemispheres(currMonth, months.south);
+    status.north = this.getStatusTimeSpans(currMonth, months.north);
+    status.south = this.getStatusTimeSpans(currMonth, months.south);
     
     return status;
   }
