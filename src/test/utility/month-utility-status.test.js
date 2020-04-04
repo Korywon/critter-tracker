@@ -17,7 +17,6 @@ test('null timespans array', () => {
 
 test('undefined timespans array', () => {
   const currMonth = 5;
-  const span = null;
   const expectStatus = {
     available: true,
     lastMonth: false,
@@ -57,6 +56,42 @@ test('available, last month time span wrap', () => {
     available: true,
     lastMonth: true,
     new: false,
+    soon: false
+  }
+  
+  const status = MonthUtility.getStatusTimeSpans(currMonth, span);
+  
+  expect(status).toStrictEqual(expectStatus);
+});
+
+test('available and new, time span wrap', () => {
+  const currMonth = 3;
+  const span = [
+    { from: 3, through: 1 },
+  ];
+  
+  const expectStatus = {
+    available: true,
+    lastMonth: false,
+    new: true,
+    soon: false
+  }
+  
+  const status = MonthUtility.getStatusTimeSpans(currMonth, span);
+  
+  expect(status).toStrictEqual(expectStatus);
+});
+
+test('available, in time span', () => {
+  const currMonth = 10;
+  const span = [
+    { in: 10 },
+  ];
+  
+  const expectStatus = {
+    available: true,
+    lastMonth: true,
+    new: true,
     soon: false
   }
   

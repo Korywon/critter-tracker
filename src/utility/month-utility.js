@@ -100,6 +100,13 @@ export default class MonthUtility {
         }
 
         /*
+         * If the time span start is this month. 
+         */
+        if (span.from === currMonth) {
+          status.new = true;
+        }
+
+        /*
          * If the time span starts next month. 
          */
         if (span.from === nextMonth) {
@@ -120,6 +127,7 @@ export default class MonthUtility {
         if (span.in === currMonth) {
           status.available = true;
           status.lastMonth = true;
+          status.new = true;
         }
 
         /*
@@ -187,5 +195,28 @@ export default class MonthUtility {
     }
     
     return names[month];
+  }
+
+  static getMonthSeason(currMonth) {
+    switch (currMonth) {
+      case 11:
+      case 0:
+      case 1:
+        return 'winter';
+      case 2:
+      case 3:
+      case 4:
+        return 'spring';
+      case 5:
+      case 6:
+      case 7:
+        return 'summer';
+      case 8:
+      case 9:
+      case 10:
+        return 'fall';
+      default:
+        return null;
+    }
   }
 }
