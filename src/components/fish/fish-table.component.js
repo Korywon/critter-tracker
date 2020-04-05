@@ -124,13 +124,51 @@ const FishRow = props => {
       <td>
         { props.fish.price }
       </td>
+      {/* TODO: Modularize this.  */}
       <td>
-        n/a
+        {
+          props.fish.months ?
+            props.fish.months.north.map(span => {
+              if (span.hasOwnProperty('from') && span.hasOwnProperty('through')) {
+                const fromName = MonthUtility.getMonthName(span.from);
+                const throughName = MonthUtility.getMonthName(span.through);
+                return(<><span>{fromName}-{throughName}</span>&nbsp;</>);
+              } else if (span.hasOwnProperty('in')) {
+                const inName = MonthUtility.getMonthName(span.in);
+                return(<><span>{inName}</span>&nbsp;</>);
+              } else {
+                return(<></>);
+              }
+            })
+            :
+            <Badge pill variant="dark">all-year</Badge>
+        }
         <hr />
-        n/a
+        {
+          props.fish.months ?
+            props.fish.months.south.map(span => {
+              if (span.hasOwnProperty('from') && span.hasOwnProperty('through')) {
+                const fromName = MonthUtility.getMonthName(span.from);
+                const throughName = MonthUtility.getMonthName(span.through);
+                return(<><span>{fromName}-{throughName}</span>&nbsp;</>);
+              } else if (span.hasOwnProperty('in')) {
+                const inName = MonthUtility.getMonthName(span.in);
+                return(<><span>{inName}</span>&nbsp;</>);
+              } else {
+                return(<></>);
+              }
+            })
+            :
+            <Badge pill variant="dark">all-year</Badge>
+        }
       </td>
       <td>
-        n/a-n/a
+        {
+          props.fish.time ?
+            props.fish.time.map(time => {
+            return(<><span>{time.start}-{time.end}</span><br /></>);
+            }) : "all-day"
+        }
       </td>
     </tr>
   );
