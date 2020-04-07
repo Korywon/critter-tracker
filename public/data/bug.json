@@ -1,267 +1,218 @@
-[
-  {
+[{
     "name": "commbutterfly",
     "price": 160,
     "location": "flying",
-    "time": [
-      {
-        "start": 4,
-        "end": 19
-      }
-    ]
+    "time": [{
+      "start": 4,
+      "end": 19
+    }]
   },
   {
     "name": "yellow butterfly",
     "price": 160,
     "location": "flying",
-    "time": [
-      {
-        "start": 4,
-        "end": 19
-      }
-    ]
+    "time": [{
+      "start": 4,
+      "end": 19
+    }]
   },
   {
     "name": "tiger butterfly",
     "price": 240,
     "location": "flying",
-    "time": [
-      {
-        "start": 4,
-        "end": 19
-      }
-    ]
+    "time": [{
+      "start": 4,
+      "end": 19
+    }]
   },
   {
     "name": "peacock butterfly",
     "price": 2500,
     "location": "flying (hybrid flowers)",
-    "time": [
-      {
-        "start": 4,
-        "end": 19
-      }
-    ]
+    "time": [{
+      "start": 4,
+      "end": 19
+    }]
   },
   {
     "name": "common bluebottle",
     "price": 300,
     "location": "flying",
-    "time": [
-      {
-        "start": 4,
-        "end": 19
-      }
-    ]
+    "time": [{
+      "start": 4,
+      "end": 19
+    }]
   },
   {
     "name": "paper kite butterfly",
     "price": 1000,
     "location": "flying",
-    "time": [
-      {
-        "start": 8,
-        "end": 19
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 19
+    }]
   },
   {
     "name": "great purple emperor",
     "price": 3000,
     "location": "flying",
-    "time": [
-      {
-        "start": 4,
-        "end": 19
-      }
-    ]
+    "time": [{
+      "start": 4,
+      "end": 19
+    }]
   },
   {
     "name": "monarch butterfly",
     "price": 140,
     "location": "flying",
-    "time": [
-      {
-        "start": 4,
-        "end": 17
-      }
-    ]
+    "time": [{
+      "start": 4,
+      "end": 17
+    }]
   },
   {
     "name": "emperor butterfly",
     "price": 4000,
     "location": "flying",
-    "time": [
-      {
-        "start": 17,
-        "end": 8
-      }
-    ]
+    "time": [{
+      "start": 17,
+      "end": 8
+    }]
   },
   {
     "name": "agrias butterfly",
     "price": 3000,
     "location": "flying",
-    "time": [
-      {
-        "start": 8,
-        "end": 17
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 17
+    }]
   },
   {
     "name": "rajah brooke's birdwing",
     "price": 2500,
     "location": "flying",
-    "time": [
-      {
-        "start": 8,
-        "end": 17
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 17
+    }]
   },
   {
     "name": "queen alexandra's birdwing",
     "price": 4000,
     "location": "flying",
-    "time": [
-      {
-        "start": 8,
-        "end": 16
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 16
+    }]
   },
   {
     "name": "moth",
     "price": 130,
     "location": "flying by light",
-    "time": [
-      {
-        "start": 19,
-        "end": 4
-      }
-    ]
+    "time": [{
+      "start": 19,
+      "end": 4
+    }]
   },
   {
     "name": "atlas moth",
     "price": 3000,
     "location": "trees",
-    "time": [
-      {
-        "start": 19,
-        "end": 4
-      }
-    ]
+    "time": [{
+      "start": 19,
+      "end": 4
+    }]
   },
   {
     "name": "madagascan sunset moth",
     "price": 2500,
     "location": "flying",
-    "time": [
-      {
-        "start": 8,
-        "end": 16
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 16
+    }]
   },
   {
     "name": "long locust",
     "price": 200,
     "location": "ground",
-    "time": [
-      {
-        "start": 8,
-        "end": 19
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 19
+    }]
   },
   {
     "name": "migratory locust",
     "price": 600,
     "location": "ground",
-    "time": [
-      {
-        "start": 8,
-        "end": 19
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 19
+    }]
   },
   {
     "name": "rice grasshopper",
     "price": 160,
     "location": "ground",
-    "time": [
-      {
-        "start": 8,
-        "end": 19
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 19
+    }]
   },
   {
     "name": "grasshopper",
     "price": 160,
     "location": "ground",
-    "time": [
-      {
-        "start": 8,
-        "end": 17
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 17
+    }]
   },
   {
     "name": "cricket",
     "price": 130,
     "location": "ground",
-    "time": [
-      {
-        "start": 17,
-        "end": 8
-      }
-    ]
+    "time": [{
+      "start": 17,
+      "end": 8
+    }]
   },
   {
     "name": "bell cricket",
     "price": 430,
     "location": "ground",
-    "time": [
-      {
-        "start": 17,
-        "end": 8
-      }
-    ]
+    "time": [{
+      "start": 17,
+      "end": 8
+    }]
   },
   {
     "name": "mantis",
     "price": 430,
     "location": "flowers",
-    "time": [
-      {
-        "start": 8,
-        "end": 17
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 17
+    }]
   },
   {
     "name": "orchid mantis",
     "price": 2400,
     "location": "flowers (white)",
-    "time": [
-      {
-        "start": 8,
-        "end": 17
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 17
+    }]
   },
   {
     "name": "honeybee",
     "price": 200,
     "location": "flying",
-    "time": [
-      {
-        "start": 8,
-        "end": 17
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 17
+    }]
   },
   {
     "name": "wasp",
@@ -272,52 +223,43 @@
     "name": "brown cicada",
     "price": 250,
     "location": "trees",
-    "time": [
-      {
-        "start": 8,
-        "end": 17
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 17
+    }]
   },
   {
     "name": "robust cicada",
     "price": 300,
     "location": "trees",
-    "time": [
-      {
-        "start": 8,
-        "end": 17
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 17
+    }]
   },
   {
     "name": "giant cicada",
     "price": 500,
     "location": "trees",
-    "time": [
-      {
-        "start": 8,
-        "end": 17
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 17
+    }]
   },
   {
     "name": "walker cicada",
     "price": 400,
     "location": "trees",
-    "time": [
-      {
-        "start": 8,
-        "end": 17
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 17
+    }]
   },
   {
     "name": "evening cicada",
     "price": 550,
     "location": "trees",
-    "time": [
-      {
+    "time": [{
         "start": 4,
         "end": 8
       },
@@ -336,34 +278,28 @@
     "name": "red dragonfly",
     "price": 180,
     "location": "flying",
-    "time": [
-      {
-        "start": 8,
-        "end": 19
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 19
+    }]
   },
   {
     "name": "darner dragonfly",
     "price": 230,
     "location": "flying",
-    "time": [
-      {
-        "start": 8,
-        "end": 17
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 17
+    }]
   },
   {
     "name": "banded dragonfly",
     "price": 4500,
     "location": "flying",
-    "time": [
-      {
-        "start": 8,
-        "end": 17
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 17
+    }]
   },
   {
     "name": "damselfly",
@@ -374,12 +310,10 @@
     "name": "firefly",
     "price": 300,
     "location": "flying",
-    "time": [
-      {
-        "start": 19,
-        "end": 4
-      }
-    ]
+    "time": [{
+      "start": 19,
+      "end": 4
+    }]
   },
   {
     "name": "mole cricket",
@@ -390,34 +324,28 @@
     "name": "pondskater",
     "price": 130,
     "location": "ponds and rivers",
-    "time": [
-      {
-        "start": 8,
-        "end": 19
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 19
+    }]
   },
   {
     "name": "diving beetle",
     "price": 800,
     "location": "ponds and rivers",
-    "time": [
-      {
-        "start": 8,
-        "end": 19
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 19
+    }]
   },
   {
     "name": "giant water bug",
     "price": 2000,
     "location": "ponds and rivers",
-    "time": [
-      {
-        "start": 19,
-        "end": 8
-      }
-    ]
+    "time": [{
+      "start": 19,
+      "end": 8
+    }]
   },
   {
     "name": "stinkbug",
@@ -428,23 +356,19 @@
     "name": "man-faced stink bug",
     "price": 1000,
     "location": "flowers",
-    "time": [
-      {
-        "start": 19,
-        "end": 8
-      }
-    ]
+    "time": [{
+      "start": 19,
+      "end": 8
+    }]
   },
   {
     "name": "ladybug",
     "price": 200,
     "location": "flowers",
-    "time": [
-      {
-        "start": 8,
-        "end": 17
-      }
-    ]
+    "time": [{
+      "start": 8,
+      "end": 17
+    }]
   },
   {
     "name": "tiger beetle",
@@ -490,12 +414,10 @@
     "name": "scarab beetle",
     "price": 10000,
     "location": "trees",
-    "time": [
-      {
-        "start": 23,
-        "end": 8
-      }
-    ]
+    "time": [{
+      "start": 23,
+      "end": 8
+    }]
   },
   {
     "name": "drone beetle",
@@ -506,12 +428,10 @@
     "name": "goliath beetle",
     "price": 8000,
     "location": "trees (coconut)",
-    "time": [
-      {
-        "start": 17,
-        "end": 8
-      }
-    ]
+    "time": [{
+      "start": 17,
+      "end": 8
+    }]
   },
   {
     "name": "saw stag",
@@ -527,107 +447,88 @@
     "name": "giant stag",
     "price": 10000,
     "location": "trees",
-    "time": [
-      {
-        "start": 23,
-        "end": 8
-      }
-    ]
+    "time": [{
+      "start": 23,
+      "end": 8
+    }]
   },
   {
     "name": "rainbow stag",
     "price": 6000,
     "location": "trees",
-    "time": [
-      {
-        "start": 19,
-        "end": 8
-      }
-    ]
+    "time": [{
+      "start": 19,
+      "end": 8
+    }]
   },
   {
     "name": "cyclommatus stag",
     "price": 8000,
     "location": "trees (coconut)",
-    "time": [
-      {
-        "start": 17,
-        "end": 8
-      }
-    ]
+    "time": [{
+      "start": 17,
+      "end": 8
+    }]
   },
   {
     "name": "golden stag",
     "price": 12000,
     "location": "trees (coconut)",
-    "time": [
-      {
-        "start": 17,
-        "end": 8
-      }
-    ]
+    "time": [{
+      "start": 17,
+      "end": 8
+    }]
   },
   {
     "name": "giraffe stag",
     "price": 12000,
     "location": "trees (coconut)",
-    "time": [
-      {
-        "start": 17,
-        "end": 8
-      }
-    ]
+    "time": [{
+      "start": 17,
+      "end": 8
+    }]
   },
   {
     "name": "horned dynastid",
     "price": 1350,
     "location": "trees",
-    "time": [
-      {
-        "start": 17,
-        "end": 8
-      }
-    ]
+    "time": [{
+      "start": 17,
+      "end": 8
+    }]
   },
   {
     "name": "horned atlas",
     "price": 8000,
     "location": "trees (coconut)",
-    "time": [
-      {
-        "start": 17,
-        "end": 8
-      }
-    ]
+    "time": [{
+      "start": 17,
+      "end": 8
+    }]
   },
   {
     "name": "horned elephant",
     "price": 8000,
     "location": "trees (coconut)",
-    "time": [
-      {
-        "start": 17,
-        "end": 8
-      }
-    ]
+    "time": [{
+      "start": 17,
+      "end": 8
+    }]
   },
   {
     "name": "horned hercules",
     "price": 12000,
     "location": "trees (coconut)",
-    "time": [
-      {
-        "start": 17,
-        "end": 8
-      }
-    ]
+    "time": [{
+      "start": 17,
+      "end": 8
+    }]
   },
   {
     "name": "walking stick",
     "price": 600,
     "location": "trees",
-    "time": [
-      {
+    "time": [{
         "start": 4,
         "end": 8
       },
@@ -656,12 +557,10 @@
     "name": "hermit crab",
     "price": 1000,
     "location": "beach (disguised as shells)",
-    "time": [
-      {
-        "start": 19,
-        "end": 8
-      }
-    ]
+    "time": [{
+      "start": 19,
+      "end": 8
+    }]
   },
   {
     "name": "wharf roach",
@@ -677,12 +576,10 @@
     "name": "mosquito",
     "price": 130,
     "location": "flying",
-    "time": [
-      {
-        "start": 17,
-        "end": 4
-      }
-    ]
+    "time": [{
+      "start": 17,
+      "end": 4
+    }]
   },
   {
     "name": "flea",
@@ -698,55 +595,45 @@
     "name": "pill bug",
     "price": 250,
     "location": "rocks (hitting)",
-    "time": [
-      {
-        "start": 23,
-        "end": 16
-      }
-    ]
+    "time": [{
+      "start": 23,
+      "end": 16
+    }]
   },
   {
     "name": "centipede",
     "price": 300,
     "location": "rocks (hitting)",
-    "time": [
-      {
-        "start": 16,
-        "end": 23
-      }
-    ]
+    "time": [{
+      "start": 16,
+      "end": 23
+    }]
   },
   {
     "name": "spider",
     "price": 480,
     "location": "trees (shaking)",
-    "time": [
-      {
-        "start": 19,
-        "end": 8
-      }
-    ]
+    "time": [{
+      "start": 19,
+      "end": 8
+    }]
   },
   {
     "name": "tarantula",
     "price": 8000,
     "location": "ground",
-    "time": [
-      {
-        "start": 19,
-        "end": 4
-      }
-    ]
+    "time": [{
+      "start": 19,
+      "end": 4
+    }]
   },
   {
     "name": "scorpion",
     "price": 8000,
     "location": "ground",
-    "time": [
-      {
-        "start": 19,
-        "end": 4
-      }
-    ]
+    "time": [{
+      "start": 19,
+      "end": 4
+    }]
   }
 ]
