@@ -148,8 +148,8 @@
     "location": "trees",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 19,
+        "end": 4
       }
     ]
   },
@@ -159,8 +159,8 @@
     "location": "flying",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 8,
+        "end": 16
       }
     ]
   },
@@ -170,8 +170,8 @@
     "location": "ground",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 8,
+        "end": 19
       }
     ]
   },
@@ -181,8 +181,8 @@
     "location": "ground",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 8,
+        "end": 19
       }
     ]
   },
@@ -192,8 +192,8 @@
     "location": "ground",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 8,
+        "end": 19
       }
     ]
   },
@@ -203,8 +203,8 @@
     "location": "ground",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 8,
+        "end": 17
       }
     ]
   },
@@ -214,8 +214,8 @@
     "location": "ground",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 17,
+        "end": 8
       }
     ]
   },
@@ -225,8 +225,8 @@
     "location": "ground",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 17,
+        "end": 8
       }
     ]
   },
@@ -236,8 +236,8 @@
     "location": "flowers",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 8,
+        "end": 17
       }
     ]
   },
@@ -247,8 +247,8 @@
     "location": "flowers (white)",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 8,
+        "end": 17
       }
     ]
   },
@@ -258,21 +258,15 @@
     "location": "flying",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 8,
+        "end": 17
       }
     ]
   },
   {
     "name": "wasp",
     "price": 2500,
-    "location": "trees (shaking)",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "trees (shaking)"
   },
   {
     "name": "brown cicada",
@@ -280,8 +274,8 @@
     "location": "trees",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 8,
+        "end": 17
       }
     ]
   },
@@ -291,8 +285,8 @@
     "location": "trees",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 8,
+        "end": 17
       }
     ]
   },
@@ -302,8 +296,8 @@
     "location": "trees",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 8,
+        "end": 17
       }
     ]
   },
@@ -313,8 +307,8 @@
     "location": "trees",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 8,
+        "end": 17
       }
     ]
   },
@@ -324,21 +318,19 @@
     "location": "trees",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 4,
+        "end": 8
+      },
+      {
+        "start": 16,
+        "end": 19
       }
     ]
   },
   {
     "name": "cicada shell",
     "price": 10,
-    "location": "trees",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "trees"
   },
   {
     "name": "red dragonfly",
@@ -346,8 +338,8 @@
     "location": "flying",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 8,
+        "end": 19
       }
     ]
   },
@@ -357,8 +349,8 @@
     "location": "flying",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 8,
+        "end": 17
       }
     ]
   },
@@ -368,21 +360,15 @@
     "location": "flying",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 8,
+        "end": 17
       }
     ]
   },
   {
     "name": "damselfly",
     "price": 500,
-    "location": "flying",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "flying"
   },
   {
     "name": "firefly",
@@ -390,21 +376,15 @@
     "location": "flying",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 19,
+        "end": 4
       }
     ]
   },
   {
     "name": "mole cricket",
     "price": 500,
-    "location": "underground",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "underground"
   },
   {
     "name": "pondskater",
@@ -412,8 +392,8 @@
     "location": "ponds and rivers",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 8,
+        "end": 19
       }
     ]
   },
@@ -423,8 +403,8 @@
     "location": "ponds and rivers",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 8,
+        "end": 19
       }
     ]
   },
@@ -434,21 +414,15 @@
     "location": "ponds and rivers",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 19,
+        "end": 8
       }
     ]
   },
   {
     "name": "stinkbug",
     "price": 120,
-    "location": "flowers",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "flowers"
   },
   {
     "name": "man-faced stink bug",
@@ -456,8 +430,8 @@
     "location": "flowers",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 19,
+        "end": 8
       }
     ]
   },
@@ -467,98 +441,50 @@
     "location": "flowers",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 8,
+        "end": 17
       }
     ]
   },
   {
     "name": "tiger beetle",
     "price": 1500,
-    "location": "ground",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "ground"
   },
   {
     "name": "jewel beetle",
     "price": 2400,
-    "location": "tree (stumps)",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "tree (stumps)"
   },
   {
     "name": "violin beetle",
     "price": 450,
-    "location": "tree (stumps)",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "tree (stumps)"
   },
   {
     "name": "citrus long-horned beetle",
     "price": 350,
-    "location": "tree (stumps)",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "tree (stumps)"
   },
   {
     "name": "rosalia batesi beetle",
     "price": 3000,
-    "location": "tree (stumps)",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "tree (stumps)"
   },
   {
     "name": "blue weevil beetle",
     "price": 800,
-    "location": "trees (coconut)",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "trees (coconut)"
   },
   {
     "name": "dung beetle",
     "price": 3000,
-    "location": "ground (rolling snowballs)",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "ground (rolling snowballs)"
   },
   {
     "name": "earth-boring dung beetle",
     "price": 300,
-    "location": "ground",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "ground"
   },
   {
     "name": "scarab beetle",
@@ -566,21 +492,15 @@
     "location": "trees",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 23,
+        "end": 8
       }
     ]
   },
   {
     "name": "drone beetle",
     "price": 200,
-    "location": "trees",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "trees"
   },
   {
     "name": "goliath beetle",
@@ -588,32 +508,20 @@
     "location": "trees (coconut)",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 17,
+        "end": 8
       }
     ]
   },
   {
     "name": "saw stag",
     "price": 2000,
-    "location": "trees",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "trees"
   },
   {
     "name": "miyama stag",
     "price": 1000,
-    "location": "trees",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "trees"
   },
   {
     "name": "giant stag",
@@ -621,8 +529,8 @@
     "location": "trees",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 23,
+        "end": 8
       }
     ]
   },
@@ -632,8 +540,8 @@
     "location": "trees",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 19,
+        "end": 8
       }
     ]
   },
@@ -643,8 +551,8 @@
     "location": "trees (coconut)",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 17,
+        "end": 8
       }
     ]
   },
@@ -654,8 +562,8 @@
     "location": "trees (coconut)",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 17,
+        "end": 8
       }
     ]
   },
@@ -665,8 +573,8 @@
     "location": "trees (coconut)",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 17,
+        "end": 8
       }
     ]
   },
@@ -676,8 +584,8 @@
     "location": "trees",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 17,
+        "end": 8
       }
     ]
   },
@@ -687,8 +595,8 @@
     "location": "trees (coconut)",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 17,
+        "end": 8
       }
     ]
   },
@@ -698,8 +606,8 @@
     "location": "trees (coconut)",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 17,
+        "end": 8
       }
     ]
   },
@@ -709,8 +617,8 @@
     "location": "trees (coconut)",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 17,
+        "end": 8
       }
     ]
   },
@@ -720,43 +628,29 @@
     "location": "trees",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 4,
+        "end": 8
+      },
+      {
+        "start": 17,
+        "end": 19
       }
     ]
   },
   {
     "name": "walking leaf",
     "price": 600,
-    "location": "trees (underneath, disguised as leafs)",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "trees (underneath, disguised as leafs)"
   },
   {
     "name": "bagworm",
     "price": 600,
-    "location": "trees (shaking)",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "trees (shaking)"
   },
   {
     "name": "ant",
     "price": 80,
-    "location": "rotten food",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "rotten food"
   },
   {
     "name": "hermit crab",
@@ -764,32 +658,20 @@
     "location": "beach (disguised as shells)",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 19,
+        "end": 8
       }
     ]
   },
   {
     "name": "wharf roach",
     "price": 200,
-    "location": "beach rocks",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "beach rocks"
   },
   {
     "name": "fly",
     "price": 60,
-    "location": "trash items",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "trash items"
   },
   {
     "name": "mosquito",
@@ -797,32 +679,20 @@
     "location": "flying",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 17,
+        "end": 4
       }
     ]
   },
   {
     "name": "flea",
     "price": 70,
-    "location": "villager's heads",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "villager's heads"
   },
   {
     "name": "snail",
     "price": 250,
-    "location": "rocks (rainy)",
-    "time": [
-      {
-        "start": 0,
-        "end": 0
-      }
-    ]
+    "location": "rocks (rainy)"
   },
   {
     "name": "pill bug",
@@ -830,8 +700,8 @@
     "location": "rocks (hitting)",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 23,
+        "end": 16
       }
     ]
   },
@@ -841,8 +711,8 @@
     "location": "rocks (hitting)",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 16,
+        "end": 23
       }
     ]
   },
@@ -852,8 +722,8 @@
     "location": "trees (shaking)",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 19,
+        "end": 8
       }
     ]
   },
@@ -863,8 +733,8 @@
     "location": "ground",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 19,
+        "end": 4
       }
     ]
   },
@@ -874,8 +744,8 @@
     "location": "ground",
     "time": [
       {
-        "start": 0,
-        "end": 0
+        "start": 19,
+        "end": 4
       }
     ]
   }
