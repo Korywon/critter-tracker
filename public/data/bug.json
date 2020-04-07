@@ -1,0 +1,882 @@
+[
+  {
+    "name": "commbutterfly",
+    "price": 160,
+    "location": "flying",
+    "time": [
+      {
+        "start": 4,
+        "end": 19
+      }
+    ]
+  },
+  {
+    "name": "yellow butterfly",
+    "price": 160,
+    "location": "flying",
+    "time": [
+      {
+        "start": 4,
+        "end": 19
+      }
+    ]
+  },
+  {
+    "name": "tiger butterfly",
+    "price": 240,
+    "location": "flying",
+    "time": [
+      {
+        "start": 4,
+        "end": 19
+      }
+    ]
+  },
+  {
+    "name": "peacock butterfly",
+    "price": 2500,
+    "location": "flying (hybrid flowers)",
+    "time": [
+      {
+        "start": 4,
+        "end": 19
+      }
+    ]
+  },
+  {
+    "name": "common bluebottle",
+    "price": 300,
+    "location": "flying",
+    "time": [
+      {
+        "start": 4,
+        "end": 19
+      }
+    ]
+  },
+  {
+    "name": "paper kite butterfly",
+    "price": 1000,
+    "location": "flying",
+    "time": [
+      {
+        "start": 8,
+        "end": 19
+      }
+    ]
+  },
+  {
+    "name": "great purple emperor",
+    "price": 3000,
+    "location": "flying",
+    "time": [
+      {
+        "start": 4,
+        "end": 19
+      }
+    ]
+  },
+  {
+    "name": "monarch butterfly",
+    "price": 140,
+    "location": "flying",
+    "time": [
+      {
+        "start": 4,
+        "end": 17
+      }
+    ]
+  },
+  {
+    "name": "emperor butterfly",
+    "price": 4000,
+    "location": "flying",
+    "time": [
+      {
+        "start": 17,
+        "end": 8
+      }
+    ]
+  },
+  {
+    "name": "agrias butterfly",
+    "price": 3000,
+    "location": "flying",
+    "time": [
+      {
+        "start": 8,
+        "end": 17
+      }
+    ]
+  },
+  {
+    "name": "rajah brooke's birdwing",
+    "price": 2500,
+    "location": "flying",
+    "time": [
+      {
+        "start": 8,
+        "end": 17
+      }
+    ]
+  },
+  {
+    "name": "queen alexandra's birdwing",
+    "price": 4000,
+    "location": "flying",
+    "time": [
+      {
+        "start": 8,
+        "end": 16
+      }
+    ]
+  },
+  {
+    "name": "moth",
+    "price": 130,
+    "location": "flying by light",
+    "time": [
+      {
+        "start": 19,
+        "end": 4
+      }
+    ]
+  },
+  {
+    "name": "atlas moth",
+    "price": 3000,
+    "location": "trees",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "madagascan sunset moth",
+    "price": 2500,
+    "location": "flying",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "long locust",
+    "price": 200,
+    "location": "ground",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "migratory locust",
+    "price": 600,
+    "location": "ground",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "rice grasshopper",
+    "price": 160,
+    "location": "ground",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "grasshopper",
+    "price": 160,
+    "location": "ground",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "cricket",
+    "price": 130,
+    "location": "ground",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "bell cricket",
+    "price": 430,
+    "location": "ground",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "mantis",
+    "price": 430,
+    "location": "flowers",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "orchid mantis",
+    "price": 2400,
+    "location": "flowers (white)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "honeybee",
+    "price": 200,
+    "location": "flying",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "wasp",
+    "price": 2500,
+    "location": "trees (shaking)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "brown cicada",
+    "price": 250,
+    "location": "trees",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "robust cicada",
+    "price": 300,
+    "location": "trees",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "giant cicada",
+    "price": 500,
+    "location": "trees",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "walker cicada",
+    "price": 400,
+    "location": "trees",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "evening cicada",
+    "price": 550,
+    "location": "trees",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "cicada shell",
+    "price": 10,
+    "location": "trees",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "red dragonfly",
+    "price": 180,
+    "location": "flying",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "darner dragonfly",
+    "price": 230,
+    "location": "flying",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "banded dragonfly",
+    "price": 4500,
+    "location": "flying",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "damselfly",
+    "price": 500,
+    "location": "flying",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "firefly",
+    "price": 300,
+    "location": "flying",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "mole cricket",
+    "price": 500,
+    "location": "underground",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "pondskater",
+    "price": 130,
+    "location": "ponds and rivers",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "diving beetle",
+    "price": 800,
+    "location": "ponds and rivers",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "giant water bug",
+    "price": 2000,
+    "location": "ponds and rivers",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "stinkbug",
+    "price": 120,
+    "location": "flowers",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "man-faced stink bug",
+    "price": 1000,
+    "location": "flowers",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "ladybug",
+    "price": 200,
+    "location": "flowers",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "tiger beetle",
+    "price": 1500,
+    "location": "ground",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "jewel beetle",
+    "price": 2400,
+    "location": "tree (stumps)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "violin beetle",
+    "price": 450,
+    "location": "tree (stumps)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "citrus long-horned beetle",
+    "price": 350,
+    "location": "tree (stumps)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "rosalia batesi beetle",
+    "price": 3000,
+    "location": "tree (stumps)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "blue weevil beetle",
+    "price": 800,
+    "location": "trees (coconut)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "dung beetle",
+    "price": 3000,
+    "location": "ground (rolling snowballs)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "earth-boring dung beetle",
+    "price": 300,
+    "location": "ground",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "scarab beetle",
+    "price": 10000,
+    "location": "trees",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "drone beetle",
+    "price": 200,
+    "location": "trees",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "goliath beetle",
+    "price": 8000,
+    "location": "trees (coconut)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "saw stag",
+    "price": 2000,
+    "location": "trees",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "miyama stag",
+    "price": 1000,
+    "location": "trees",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "giant stag",
+    "price": 10000,
+    "location": "trees",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "rainbow stag",
+    "price": 6000,
+    "location": "trees",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "cyclommatus stag",
+    "price": 8000,
+    "location": "trees (coconut)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "golden stag",
+    "price": 12000,
+    "location": "trees (coconut)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "giraffe stag",
+    "price": 12000,
+    "location": "trees (coconut)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "horned dynastid",
+    "price": 1350,
+    "location": "trees",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "horned atlas",
+    "price": 8000,
+    "location": "trees (coconut)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "horned elephant",
+    "price": 8000,
+    "location": "trees (coconut)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "horned hercules",
+    "price": 12000,
+    "location": "trees (coconut)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "walking stick",
+    "price": 600,
+    "location": "trees",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "walking leaf",
+    "price": 600,
+    "location": "trees (underneath, disguised as leafs)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "bagworm",
+    "price": 600,
+    "location": "trees (shaking)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "ant",
+    "price": 80,
+    "location": "rotten food",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "hermit crab",
+    "price": 1000,
+    "location": "beach (disguised as shells)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "wharf roach",
+    "price": 200,
+    "location": "beach rocks",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "fly",
+    "price": 60,
+    "location": "trash items",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "mosquito",
+    "price": 130,
+    "location": "flying",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "flea",
+    "price": 70,
+    "location": "villager's heads",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "snail",
+    "price": 250,
+    "location": "rocks (rainy)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "pill bug",
+    "price": 250,
+    "location": "rocks (hitting)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "centipede",
+    "price": 300,
+    "location": "rocks (hitting)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "spider",
+    "price": 480,
+    "location": "trees (shaking)",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "tarantula",
+    "price": 8000,
+    "location": "ground",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  },
+  {
+    "name": "scorpion",
+    "price": 8000,
+    "location": "ground",
+    "time": [
+      {
+        "start": 0,
+        "end": 0
+      }
+    ]
+  }
+]
