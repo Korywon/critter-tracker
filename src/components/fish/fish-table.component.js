@@ -5,93 +5,7 @@ import { Badge, Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import MonthUtility from '../../utility/month-utility';
-
-
-const FishStatusBadges = props => {
-  let badges = [];
-
-  /*
-   * Badges for new, available, soon, or unavailable.
-   * TODO: Generalize cases for different hemispheres.
-   */
-  if (props.status.status.new && new Date().getDay() < 8) {
-    badges.push(
-      <span key={props.status.id + '-statusBadge-new'}>
-        <Badge pill variant="primary">new</Badge>&nbsp;
-      </span>
-    );
-  } else if (props.status.status.available) {
-    badges.push(
-      <span key={props.status.id + '-statusBadge-available'}>
-        <Badge pill variant="success">available</Badge>&nbsp;
-      </span>
-    );
-  } else if(props.status.status.soon) {
-    badges.push(
-      <span key={props.status.id + '-statusBadge-info'}>
-        <Badge pill variant="info">next month</Badge>&nbsp;
-      </span>
-    );
-  } else {
-    badges.push(
-      <span key={props.status.id + '-statusBadge-unavailable'}>
-        <Badge pill variant="secondary">unavailable</Badge>&nbsp;
-      </span>
-    );
-  }
-
-  /*
-   * If this is the last month to catch the fish. 
-   */
-  if (props.status.status.lastMonth) {
-    badges.push(
-      <span key={props.status.id + '-statusBadge-lastMonth'}>
-        <Badge pill variant="danger">last month</Badge>&nbsp;
-      </span>
-    );
-  }
-
-  /*
-   * If this is the last hour to catch the fish. 
-   */
-  if (props.status.status.lastHour) {
-    badges.push(
-      <span key={props.status.id + 'statusBadge-lastHour'}>
-        <Badge pill variant="warning">last hour</Badge>&nbsp;
-      </span>
-    );
-  }
-
-  return([
-    badges
-  ]);
-}
-
-/**
- * 
- * @param {Object} props 
- */
-const FishHemisphereStatusBadges = props => {
-  let badges = [];
-
-  badges.push(
-    <FishStatusBadges
-      status={{status: props.fish.status.north, id: props.fish.id + '-north'}}
-      key={props.fish.id + '-hemisphereStatus-north'} />
-  );
-
-  badges.push(
-    <hr key={props.fish.id + '-hemisphereStatus-hr'} />
-  )
-
-  badges.push(
-    <FishStatusBadges
-      status={{status: props.fish.status.south, id: props.fish.id + '-south'}}
-      key={props.fish.id + '-hemisphereStatus-south'} />
-  );
-
-  return(<>{ badges }</>);
-}
+import StatusBadges from '../status-badges.component';
 
 const FishRow = props => {
   return(
@@ -112,8 +26,13 @@ const FishRow = props => {
           {props.fish.name}
         </Link>
         <br />
-        <FishHemisphereStatusBadges fish={props.fish}
-          key={props.fish.id + '-status'}/>
+        <StatusBadges
+          status={{status: props.fish.status.north, id: props.fish.id + '-north'}}
+          key={props.fish.id + '-hemisphereStatus-north'} />
+        <hr />
+        <StatusBadges
+          status={{status: props.fish.status.south, id: props.fish.id + '-south'}}
+          key={props.fish.id + '-hemisphereStatus-south'} />
       </td>
       <td>
         { props.fish.size }
