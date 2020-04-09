@@ -1,103 +1,17 @@
 import React, { Component } from 'react'
 
 import axios from 'axios';
-import { Badge, Table } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Table } from 'react-bootstrap';
 
 import MonthUtility from '../../utility/month-utility';
-import StatusBadges from '../status-badges.component';
-
-const FishRow = props => {
-  return(
-    <tr id={props.fish.id}>
-      <td className="text-center">
-        <Link to={'/fish/' + props.fish.id }>
-          <img 
-            width={50}
-            height={50}
-            className="mr-3"
-            src={"/image/fish/" + props.fish.id + ".webp"}
-            alt="-"
-          />
-        </Link>
-      </td>
-      <td>
-        <Link to={'/fish/' + props.fish.id }>
-          {props.fish.name}
-        </Link>
-        <br />
-        <StatusBadges
-          status={{status: props.fish.status.north, id: props.fish.id + '-north'}}
-          key={props.fish.id + '-hemisphereStatus-north'} />
-        <hr />
-        <StatusBadges
-          status={{status: props.fish.status.south, id: props.fish.id + '-south'}}
-          key={props.fish.id + '-hemisphereStatus-south'} />
-      </td>
-      <td>
-        { props.fish.size }
-      </td>
-      <td>
-        { props.fish.location }
-      </td>
-      <td>
-        { props.fish.price }
-      </td>
-      {/* TODO: Modularize this.  */}
-      <td>
-        {
-          props.fish.months ?
-            props.fish.months.north.map(span => {
-              if (span.hasOwnProperty('from') && span.hasOwnProperty('through')) {
-                const fromName = MonthUtility.getMonthName(span.from);
-                const throughName = MonthUtility.getMonthName(span.through);
-                return(<><span>{fromName}-{throughName}</span>&nbsp;</>);
-              } else if (span.hasOwnProperty('in')) {
-                const inName = MonthUtility.getMonthName(span.in);
-                return(<><span>{inName}</span>&nbsp;</>);
-              } else {
-                return(<></>);
-              }
-            })
-            :
-            <Badge pill variant="dark">all-year</Badge>
-        }
-        <hr />
-        {
-          props.fish.months ?
-            props.fish.months.south.map(span => {
-              if (span.hasOwnProperty('from') && span.hasOwnProperty('through')) {
-                const fromName = MonthUtility.getMonthName(span.from);
-                const throughName = MonthUtility.getMonthName(span.through);
-                return(<><span>{fromName}-{throughName}</span>&nbsp;</>);
-              } else if (span.hasOwnProperty('in')) {
-                const inName = MonthUtility.getMonthName(span.in);
-                return(<><span>{inName}</span>&nbsp;</>);
-              } else {
-                return(<></>);
-              }
-            })
-            :
-            <Badge pill variant="dark">all-year</Badge>
-        }
-      </td>
-      <td>
-        {
-          props.fish.time ?
-            props.fish.time.map(time => {
-            return(<><span>{time.start}-{time.end}</span><br /></>);
-            }) : "all-day"
-        }
-      </td>
-    </tr>
-  );
-}
+import FishTableRow from './fish-table-row.component';
 
 export default class FishTable extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
+      config: this.props.config,
       fishList: []
     };
   }
@@ -112,8 +26,6 @@ export default class FishTable extends Component {
          * chars.
          * TODO: Move the status evaluation outside of this function or have a
          * way to determine which hemisphere the user is in before.
-         * TODO: Change the status to north, south, and accomodate for time
-         * and month availability.
          */
         for (var index in tempResponse.data) {
           tempResponse.data[index].id =
@@ -153,7 +65,10 @@ export default class FishTable extends Component {
    */
   buildFishTableRows () {
     return this.state.fishList.map(currFish => {
-      return <FishRow fish={currFish} key={currFish.name} />
+      return(
+        <FishTableRow
+          config={this.state.config} fish={currFish} key={currFish.id} />
+      );
     });
   }
 

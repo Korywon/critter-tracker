@@ -11,9 +11,19 @@ export default class FishList extends Component {
   constructor (props) {
     super(props);
 
+    this.updateConfig = this.updateConfig.bind(this);
+
     this.state = {
-      fishList: []
+      config: {
+        hemisphere: "both",
+        monthLayout: "expanded",
+        timeFormat: 12
+      }
     };
+  }
+
+  updateConfig (inputState) {
+    this.setState({ config: inputState });
   }
 
   render () {
@@ -25,9 +35,9 @@ export default class FishList extends Component {
           </p>
         </div>
         <BreadcrumbMenu />
-        <ConfigDropdown />
+        <ConfigDropdown updateConfig={this.updateConfig} />
         <br />
-        <FishTable />
+        <FishTable config={this.state.config} />
       </Container>
     );
   }
