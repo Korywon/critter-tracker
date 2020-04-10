@@ -17,6 +17,30 @@ export default class FishTableRow extends Component {
   }
 
   render () {
+    let statusBadges = [
+      <StatusBadges
+        status={{
+          status: this.state.fish.status.north,
+          id: this.state.fish.id + '-north'}}
+        key={this.state.fish.id + '-hemisphereStatus-north'} />,
+      <hr />,
+      <StatusBadges
+        status={{
+          status: this.state.fish.status.south,
+          id: this.state.fish.id + '-south'}}
+        key={this.state.fish.id + '-hemisphereStatus-south'} />
+    ];
+
+    /*
+     * If the config is north, only use the north badge. If south,
+     * only use the south badge.
+     */
+    if (!this.props.config.hemisphere.localeCompare('north')) {
+      statusBadges = [statusBadges[0]];
+    } else if (!this.props.config.hemisphere.localeCompare('south')) {
+      statusBadges = [statusBadges[2]];
+    }
+
     return(
       <tr id={this.state.fish.id}>
         <td className="text-center">
@@ -35,17 +59,7 @@ export default class FishTableRow extends Component {
             {this.state.fish.name}
           </Link>
           <br />
-          <StatusBadges
-            status={{
-              status: this.state.fish.status.north,
-              id: this.state.fish.id + '-north'}}
-            key={this.state.fish.id + '-hemisphereStatus-north'} />
-          <hr />
-          <StatusBadges
-            status={{
-              status: this.state.fish.status.south,
-              id: this.state.fish.id + '-south'}}
-            key={this.state.fish.id + '-hemisphereStatus-south'} />
+          { statusBadges }
         </td>
         <td>
           { this.state.fish.size }

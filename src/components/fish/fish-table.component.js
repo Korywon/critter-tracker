@@ -64,10 +64,11 @@ export default class FishTable extends Component {
    * Maps the data in the array into rows of fish data.
    */
   buildFishTableRows () {
-    return this.state.fishList.map(currFish => {
+    return this.state.fishList.map((currFish, index) => {
       return(
         <FishTableRow
-          config={this.state.config} fish={currFish} key={currFish.id} />
+          config={this.props.config} fish={currFish}
+          key={currFish.id + index} />
       );
     });
   }

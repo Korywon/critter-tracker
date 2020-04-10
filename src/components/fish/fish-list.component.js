@@ -11,19 +11,29 @@ export default class FishList extends Component {
   constructor (props) {
     super(props);
 
-    this.updateConfig = this.updateConfig.bind(this);
+    this.updateHemisphere = this.updateHemisphere.bind(this);
+    this.updateMonthLayout = this.updateMonthLayout.bind(this);
+    this.updateTimeFormat = this.updateTimeFormat.bind(this);
 
     this.state = {
       config: {
-        hemisphere: "both",
+        hemisphere: "north",
         monthLayout: "expanded",
         timeFormat: 12
       }
     };
   }
 
-  updateConfig (inputState) {
-    this.setState({ config: inputState });
+  updateHemisphere (event) {
+    this.setState({config:{ hemisphere: event.target.value }});
+  }
+
+  updateMonthLayout (event) {
+    this.setState({ monthLayout: event.target.value });
+  }
+
+  updateTimeFormat (event) {
+    this.setState({ timeFormat: parseInt(event.target.value) });
   }
 
   render () {
@@ -35,7 +45,10 @@ export default class FishList extends Component {
           </p>
         </div>
         <BreadcrumbMenu />
-        <ConfigDropdown updateConfig={this.updateConfig} />
+        <ConfigDropdown
+          updateHemisphere={this.updateHemisphere} 
+          updateMonthLayout={this.updateMonthLayout}
+          updateTimeFormat={this.updateTimeFormat} />
         <br />
         <FishTable config={this.state.config} />
       </Container>
