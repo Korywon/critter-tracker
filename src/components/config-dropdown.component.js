@@ -18,15 +18,6 @@ export default class ConfigDropdown extends Component {
         </Col>
         <Col>
           <Form.Label>
-            <Badge pill variant="dark">Month Layout</Badge>
-          </Form.Label>
-          <Form.Control as="select" onChange={this.props.updateMonthLayout}>
-            <option value="expanded">Expanded</option>
-            <option value="simple">Simple</option>
-          </Form.Control>
-        </Col>
-        <Col>
-          <Form.Label>
             <Badge pill variant="dark">Time Format</Badge>
           </Form.Label>
           <Form.Control as="select" onChange={this.props.updateTimeFormat}>

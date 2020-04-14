@@ -18,7 +18,6 @@ export default class FishList extends Component {
     this.state = {
       config: {
         hemisphere: "north",
-        monthLayout: "expanded",
         timeFormat: 12
       }
     };
@@ -46,8 +45,7 @@ export default class FishList extends Component {
         </div>
         <BreadcrumbMenu />
         <ConfigDropdown
-          updateHemisphere={this.updateHemisphere} 
-          updateMonthLayout={this.updateMonthLayout}
+          updateHemisphere={this.updateHemisphere}
           updateTimeFormat={this.updateTimeFormat} />
         <br />
         <FishTable config={this.state.config} />
