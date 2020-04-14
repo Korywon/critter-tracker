@@ -1,25 +1,15 @@
 import React, { Component } from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { Container } from 'react-bootstrap';
 
 export default class About extends Component {
   render () {
     return (
-      <div className="container">
-        <div className="text-center">
+      <Container className="text-center">
           <p>
             About under construction!
           </p>
-          <a className="text-dark" 
-            href="https://www.github.com/korywon/critter-tracker"
-            rel="noopener noreferrer" target="_blank">
-            <FontAwesomeIcon icon={faGithub} size="6x" />
-          </a>
-          <br />
-          GitHub
-        </div>
-      </div>
+      </Container>
     );
   }
 }
