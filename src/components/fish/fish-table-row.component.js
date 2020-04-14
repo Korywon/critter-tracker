@@ -115,6 +115,13 @@ export default class FishTableRow extends Component {
           { this.state.fish.location }
         </td>
         <td>
+          <img
+            width={25}
+            height={25}
+            className="mr-3"
+            src={'/image/bell_bag.png'}
+            alt="-"
+          />
           { this.state.fish.price }
         </td>
         {/* TODO: Modularize this.  */}
