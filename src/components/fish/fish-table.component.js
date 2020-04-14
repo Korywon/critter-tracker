@@ -82,7 +82,7 @@ export default class FishTable extends Component {
         <thead className="thead-dark">
           <tr>
             <th width={50}>Icon</th>
-            <th width={200}>Name</th>
+            <th width={175}>Name</th>
             <th width={50}>Size</th>
             <th width={75}>Location</th>
             <th width={75}>Price</th>

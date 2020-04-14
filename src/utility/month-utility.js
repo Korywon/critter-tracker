@@ -63,6 +63,24 @@ export default class MonthUtility {
   }
 
   /**
+   * Loops through each time span in the array and checks if the month is
+   * within any of the time spans.
+   * @param {Number} currMonth 
+   * @param {Array} timeSpanArr 
+   */
+  static inTimeSpans(currMonth, timeSpanArr) {
+    let inSpans = false;
+
+    for (let index in timeSpanArr) {
+      if (this.inTimeSpan(currMonth, timeSpanArr[index])) {
+        inSpans = true;
+      }
+    }
+
+    return inSpans;
+  }
+
+  /**
    * Returns the status object based on the months object and current month.
    * @param {Number} currMonth 
    * @param {Object} months 
@@ -197,6 +215,11 @@ export default class MonthUtility {
     return names[month];
   }
 
+  /**
+   * Returns the season string based on the given month number. The seasons
+   * returned by this function correlates with the seasons in Animal Crossing.
+   * @param {Number} currMonth 
+   */
   static getMonthSeason(currMonth) {
     switch (currMonth) {
       case 11:

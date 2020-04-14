@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 
-import MonthUtility from '../../utility/month-utility';
-
-import { Badge } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import MonthBar from '../month-bar.component';
 import StatusBadges from '../status-badges.component';
 
 export default class FishTableRow extends Component {
@@ -16,7 +14,10 @@ export default class FishTableRow extends Component {
     }
   }
 
-  render () {
+  /**
+   * Builds the north and south hermisphere status badges.
+   */
+  getStatusBadges () {
     let statusBadges = [
       <StatusBadges
         status={{
@@ -41,6 +42,52 @@ export default class FishTableRow extends Component {
       statusBadges = [statusBadges[2]];
     }
 
+    return statusBadges;
+  }
+
+  /**
+   * Builds the north and south hemisphere month bars.
+   */
+  getMonthBars () {
+    let northMonths = [];
+    let southMonths = [];
+
+    /**
+     * If the state has months and has the north and south hemisphere time
+     * spans.
+     */
+    if (this.state.fish.hasOwnProperty('months')) {
+      if (this.state.fish.months.hasOwnProperty('north')) {
+        northMonths = this.state.fish.months.north;
+      }
+      if (this.state.fish.months.hasOwnProperty('south')) {
+        southMonths = this.state.fish.months.south;
+      }
+    }
+
+    let monthBars = [
+      <MonthBar key={this.state.fish.id + '-monthBar-north'}
+        timeSpans={northMonths} />,
+      <hr />,
+      <MonthBar key={this.state.fish.id + '-monthBar-south'}
+        timeSpans={southMonths} />
+    ];
+
+    /*
+     * If the config is north, only use the north badge. If south,
+     * only use the south badge.
+     */
+    if (!this.props.config.hemisphere.localeCompare('north')) {
+      monthBars = [monthBars[0]];
+    } else if (!this.props.config.hemisphere.localeCompare('south')) {
+      monthBars = [monthBars[2]];
+    }
+
+    return monthBars;
+  }
+
+  render () {
+
     return(
       <tr id={this.state.fish.id}>
         <td className="text-center">
@@ -59,7 +106,7 @@ export default class FishTableRow extends Component {
             {this.state.fish.name}
           </Link>
           <br />
-          { statusBadges }
+          { this.getStatusBadges() }
         </td>
         <td>
           { this.state.fish.size }
@@ -72,49 +119,15 @@ export default class FishTableRow extends Component {
         </td>
         {/* TODO: Modularize this.  */}
         <td>
-          {
-            this.state.fish.months ?
-              this.state.fish.months.north.map(span => {
-                if (span.hasOwnProperty('from') && span.hasOwnProperty('through')) {
-                  const fromName = MonthUtility.getMonthName(span.from);
-                  const throughName = MonthUtility.getMonthName(span.through);
-                  return(<><span>{fromName}-{throughName}</span>&nbsp;</>);
-                } else if (span.hasOwnProperty('in')) {
-                  const inName = MonthUtility.getMonthName(span.in);
-                  return(<><span>{inName}</span>&nbsp;</>);
-                } else {
-                  return(<></>);
-                }
-              })
-              :
-              <Badge pill variant="dark">all-year</Badge>
-          }
-          <hr />
-          {
-            this.state.fish.months ?
-              this.state.fish.months.south.map(span => {
-                if (span.hasOwnProperty('from') && span.hasOwnProperty('through')) {
-                  const fromName = MonthUtility.getMonthName(span.from);
-                  const throughName = MonthUtility.getMonthName(span.through);
-                  return(<><span>{fromName}-{throughName}</span>&nbsp;</>);
-                } else if (span.hasOwnProperty('in')) {
-                  const inName = MonthUtility.getMonthName(span.in);
-                  return(<><span>{inName}</span>&nbsp;</>);
-                } else {
-                  return(<></>);
-                }
-              })
-              :
-              <Badge pill variant="dark">all-year</Badge>
-          }
+          { this.getMonthBars() }
         </td>
         <td>
-          {
+          {/*
             this.state.fish.time ?
               this.state.fish.time.map(time => {
               return(<><span>{time.start}-{time.end}</span><br /></>);
               }) : "all-day"
-          }
+            */}
         </td>
       </tr>
     );
