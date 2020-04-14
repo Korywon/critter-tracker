@@ -24,7 +24,7 @@ export default class FishTableRow extends Component {
           status: this.state.fish.status.north,
           id: this.state.fish.id + '-north'}}
         key={this.state.fish.id + '-hemisphereStatus-north'} />,
-      <hr />,
+      <hr key={this.state.fish.id + 'hemisphereStatus-hr'} />,
       <StatusBadges
         status={{
           status: this.state.fish.status.south,
@@ -68,7 +68,7 @@ export default class FishTableRow extends Component {
     let monthBars = [
       <MonthBar key={this.state.fish.id + '-monthBar-north'}
         timeSpans={northMonths} />,
-      <hr />,
+      <hr key={this.state.fish.id + 'monthBar-hr'} />,
       <MonthBar key={this.state.fish.id + '-monthBar-south'}
         timeSpans={southMonths} />
     ];
