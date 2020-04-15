@@ -124,7 +124,7 @@ export default class FishTableRow extends Component {
           />
           { this.state.fish.price }
         </td>
-        {/* TODO: Modularize this.  */}
+        {/* TODO: Use month badges instead of bars to save space. */}
         <td>
           { this.getMonthBars() }
         </td>
