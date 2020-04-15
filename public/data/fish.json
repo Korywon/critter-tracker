@@ -128,7 +128,10 @@
         "from": 7,
         "through": 8
       }],
-      "south": [1, 2]
+      "south": [{
+        "from": 1,
+        "south": 2
+      }]
     }
   },
   {
