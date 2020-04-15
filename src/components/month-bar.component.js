@@ -19,9 +19,21 @@ export default class MonthBar extends Component {
    * @param {boolean} inTimeSpan 
    */
   getBadge (monthNumber, inTimeSpan) {
+    const currMonth = new Date().getMonth();
     const name = MonthUtility.getMonthName(monthNumber).substr(0,3);
     const season = MonthUtility.getMonthSeason(monthNumber);
+    const triangleLeft = String.fromCharCode(0x25c2);
+    const triangleRight = String.fromCharCode(0x25b8)
+
     let variant = "secondary";
+    let label = name;
+
+    /*
+     * If month is the current month, add the black triangle indicators. 
+     */
+    if (currMonth === monthNumber) {
+      label = triangleRight + label + triangleLeft;
+    }
 
     if (inTimeSpan) {
       if (!season.localeCompare('winter')) {
@@ -38,7 +50,7 @@ export default class MonthBar extends Component {
     }
 
     return <ProgressBar key={monthNumber} 
-      label={name} variant={variant} now={10} />;
+      label={label} variant={variant} now={10} />;
   }
 
   /**
