@@ -130,7 +130,7 @@
       }],
       "south": [{
         "from": 1,
-        "south": 2
+        "through": 2
       }]
     }
   },
