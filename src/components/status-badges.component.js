@@ -8,7 +8,10 @@ export default class StatusBadges extends Component {
   constructor (props) {
     super(props);
 
-    this.state = this.props.status;
+    this.state = {
+      id: this.props.id,
+      status: this.props.status
+    };
   }
 
   render () {

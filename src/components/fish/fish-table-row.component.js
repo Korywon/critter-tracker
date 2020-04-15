@@ -20,15 +20,13 @@ export default class FishTableRow extends Component {
   getStatusBadges () {
     let statusBadges = [
       <StatusBadges
-        status={{
-          status: this.state.fish.status.north,
-          id: this.state.fish.id + '-north'}}
+        status={this.state.fish.status.north}
+        id={this.state.fish.id + '-north'}
         key={this.state.fish.id + '-hemisphereStatus-north'} />,
       <hr key={this.state.fish.id + 'hemisphereStatus-hr'} />,
       <StatusBadges
-        status={{
-          status: this.state.fish.status.south,
-          id: this.state.fish.id + '-south'}}
+        status={this.state.fish.status.south}
+        id={this.state.fish.id + '-south'}
         key={this.state.fish.id + '-hemisphereStatus-south'} />
     ];
 

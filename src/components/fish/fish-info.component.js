@@ -25,9 +25,8 @@ const Status = props => {
     <>
       <h6>Northern Hemisphere</h6>
       <StatusBadges
-        status={{
-          status: props.fish.status.north,
-          id: props.fish.id + '-north'}}
+        status={props.fish.status.north}
+        id={props.fish.id + '-north'}
         key={props.fish.id + '-hemisphereStatus-north'} />
       <br />
       <br />
@@ -35,9 +34,8 @@ const Status = props => {
       <br />
       <h6>Southern Hemisphere</h6>
       <StatusBadges
-        status={{
-          status: props.fish.status.south,
-          id: props.fish.id + '-south'}}
+        status={props.fish.status.south}
+        id={props.fish.id + '-south'}
         key={props.fish.id + '-hemisphereStatus-south'} />
       <br />
       <br />
