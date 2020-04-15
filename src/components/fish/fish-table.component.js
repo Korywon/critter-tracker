@@ -78,14 +78,14 @@ export default class FishTable extends Component {
    */
   render () {
     return(
-      <Table striped bordered hover size="sm">
+      <Table striped bordered responsive hover size="sm">
         <thead className="thead-dark">
           <tr>
             <th width={1}>Icon</th>
             <th width={160}>Name</th>
             <th width={1}>Size</th>
             <th width={1}>Location</th>
-            <th width={110}>Price</th>
+            <th width={100}>Price</th>
             <th>Months</th>
             <th>Time</th>
           </tr>
