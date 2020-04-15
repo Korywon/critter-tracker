@@ -81,8 +81,8 @@ export default class FishTable extends Component {
       <Table striped bordered responsive hover size="sm">
         <thead className="thead-dark">
           <tr>
-            <th width={1}>Icon</th>
-            <th width={160}>Name</th>
+            <th width={150}>Name</th>
+            <th width={160}>Status</th>
             <th width={1}>Size</th>
             <th width={1}>Location</th>
             <th width={100}>Price</th>

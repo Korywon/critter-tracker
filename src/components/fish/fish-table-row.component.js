@@ -97,13 +97,11 @@ export default class FishTableRow extends Component {
               src={"/image/fish/" + this.state.fish.id + ".webp"}
               alt="-"
             />
+            <br />
+            {this.state.fish.name}
           </Link>
         </td>
         <td>
-          <Link to={'/fish/' + this.state.fish.id }>
-            {this.state.fish.name}
-          </Link>
-          <br />
           { this.getStatusBadges() }
         </td>
         <td>
