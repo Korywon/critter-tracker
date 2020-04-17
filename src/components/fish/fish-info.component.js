@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Card, Container } from 'react-bootstrap';
+import { Badge, Card, Col, Container, Row } from 'react-bootstrap';
 
 import MonthUtility from '../../utility/month-utility';
 import MonthBar from '../month-bar.component';
@@ -44,6 +44,47 @@ const Status = props => {
   );
 }
 
+const Location = props => {
+  return(
+    <>
+      <h6>Location</h6>
+      <Badge pill variant="light">
+        {props.location}
+      </Badge>
+      <br />
+    </>
+  );
+}
+
+const Price = props => {
+  let variant = "secondary";
+
+  return(
+    <>
+      <h6>Price</h6>
+      <img 
+        width={25} height={25} src="/image/bell_bag.png"
+        alt="bell_bag.png"/>&nbsp;
+      <Badge pill variant="light">
+        {props.price}
+      </Badge>
+      <br />
+    </>
+  );
+}
+
+const Size = props => {
+  return(
+    <>
+      <h6>Size</h6>
+      <Badge pill variant="light">
+        {props.size}
+      </Badge>
+      <br />
+    </>
+  );
+}
+
 /**
  * TODO: Implement the time badges. Might need to create components for the
  * time badges before anything.
@@ -78,14 +119,20 @@ const Fish = props => {
             <Status fish={props.fish} />
             <hr />
           </Container>
-          <p>{props.fish.location}</p>
-          <p>
-            <img 
-              width={25} height={25} src="/image/bell_bag.png"
-              alt="bell_bag.png"/>&nbsp;
-            {props.fish.price}
-          </p>
-          <Time fish={props.fish} />
+          <Container>
+            <Row>
+              <Col>
+                <Location location={props.fish.location} />
+                <br />
+              </Col>
+              <Col>
+                <Size size={props.fish.size} />
+              </Col>
+              <Col>
+                <Price price={props.fish.price} />
+              </Col>
+            </Row>
+          </Container>
         </Card.Body>
       </Card>
     );
