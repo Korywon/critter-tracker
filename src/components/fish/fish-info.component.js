@@ -57,8 +57,6 @@ const Location = props => {
 }
 
 const Price = props => {
-  let variant = "secondary";
-
   return(
     <>
       <h6>Price</h6>
