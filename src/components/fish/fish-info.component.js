@@ -85,19 +85,6 @@ const Size = props => {
   );
 }
 
-/**
- * TODO: Implement the time badges. Might need to create components for the
- * time badges before anything.
- * @param {*} props 
- */
-const Time = props => {
-  return (
-    <>
-
-    </>
-  );
-}
-
 const Fish = props => {
 
   if (Object.keys(props.fish).length > 0) {
@@ -176,10 +163,7 @@ export default class FishInfo extends Component {
         </div>
         <br />
         <BreadcrumbMenu />
-        <Container
-          style={{paddingLeft: "10rem", paddingRight: "10rem"}}>
-          { this.fishInfo() }
-        </Container> 
+        { this.fishInfo() }
       </Container>
     );
   }
