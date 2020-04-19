@@ -103,7 +103,9 @@ const Fish = props => {
             <hr />
             <Status fish={props.fish} />
             <hr />
-            <TimeBadge time={props.fish.time ? props.fish.time : []} />
+            <TimeBadge
+              id={props.fish.id}
+              time={props.fish.time ? props.fish.time : []} />
             <hr />
           </div>
           <Row>
