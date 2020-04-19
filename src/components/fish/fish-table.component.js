@@ -15,7 +15,7 @@ export default class FishTable extends Component {
       fishList: []
     };
   }
-  
+
   componentDidMount () {
     axios.get('/data/fish.json')
       .then(response => {

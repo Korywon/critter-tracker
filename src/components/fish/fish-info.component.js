@@ -60,7 +60,7 @@ const Price = props => {
   return(
     <>
       <h6>Price</h6>
-      <img 
+      <img
         width={25} height={25} src="/image/bell_bag.png"
         alt="bell_bag.png"/>&nbsp;
       <Badge pill variant="light">
@@ -83,14 +83,31 @@ const Size = props => {
   );
 }
 
+const Time = props => {
+  if (props.time.length === 0) {
+    return(
+      <>
+        <h6>Time</h6>
+        <Badge variant="info">all-day</Badge>
+      </>
+    );
+  } else {
+    return(
+      <>
+        <h6>Time</h6>
+      </>
+    );
+  }
+}
+
 const Fish = props => {
 
   if (Object.keys(props.fish).length > 0) {
     return (
       <Card>
         <Card.Body>
-          <Container className="text-center">
-            <img 
+          <div className="text-center">
+            <img
               width={50}
               height={50}
               className="mr-3"
@@ -103,21 +120,21 @@ const Fish = props => {
             <hr />
             <Status fish={props.fish} />
             <hr />
-          </Container>
-          <Container>
-            <Row>
-              <Col>
-                <Location location={props.fish.location} />
-                <br />
-              </Col>
-              <Col>
-                <Size size={props.fish.size} />
-              </Col>
-              <Col>
-                <Price price={props.fish.price} />
-              </Col>
-            </Row>
-          </Container>
+            <Time time={props.fish.time ? props.fish.time : []} />
+            <hr />
+          </div>
+          <Row>
+            <Col>
+              <Location location={props.fish.location} />
+              <br />
+            </Col>
+            <Col>
+              <Size size={props.fish.size} />
+            </Col>
+            <Col>
+              <Price price={props.fish.price} />
+            </Col>
+          </Row>
         </Card.Body>
       </Card>
     );
@@ -145,7 +162,7 @@ export default class FishInfo extends Component {
           north: {},
           south: {}
         }
-      } 
+      }
     };
   }
 
@@ -171,7 +188,7 @@ export default class FishInfo extends Component {
       .then(response => {
         /*
          * Replaces space chars in the name with '_' chars. Then matched
-         * against the name passed in from the router. 
+         * against the name passed in from the router.
          */
         let tempFish = response.data.find(
           x => x.name.replace(/ /g, '_') === this.props.match.params.name
@@ -179,19 +196,19 @@ export default class FishInfo extends Component {
 
         /*
          * Replaces the name's space characters with underscores and uses that
-         * as the id. 
+         * as the id.
          */
         tempFish.id = tempFish.name.replace(/ /g, '_');
 
         /*
-         * Retrieves the status for each hemisphere. 
+         * Retrieves the status for each hemisphere.
          */
         tempFish.status =
           MonthUtility.getStatusHemispheres(
             new Date().getMonth(),
             tempFish.months
         );
-        
+
         this.setState({fish: tempFish});
       })
       .catch((error) => {

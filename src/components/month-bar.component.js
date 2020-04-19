@@ -15,42 +15,42 @@ export default class MonthBar extends Component {
   /**
    * Builds the badge based on the current month and if the month is in the
    * timespan.
-   * @param {Number} monthNumber 
-   * @param {boolean} inTimeSpan 
+   * @param {Number} monthNumber
+   * @param {boolean} inTimeSpan
    */
   getBadge (monthNumber, inTimeSpan) {
     const currMonth = new Date().getMonth();
     const name = MonthUtility.getMonthName(monthNumber).substr(0,3);
     const season = MonthUtility.getMonthSeason(monthNumber);
-    const triangleLeft = String.fromCharCode(0x25c2);
-    const triangleRight = String.fromCharCode(0x25b8)
-
-    let variant = "secondary";
     let label = name;
-
-    /*
-     * If month is the current month, add the black triangle indicators. 
-     */
-    if (currMonth === monthNumber) {
-      label = triangleRight + label + triangleLeft;
-    }
+    let style = {};
+    let variant = "secondary";
 
     if (inTimeSpan) {
       if (!season.localeCompare('winter')) {
         variant = "info";
       } else if (!season.localeCompare('spring')) {
         variant = "success";
-  
+
       } else if (!season.localeCompare('summer')) {
         variant = "danger";
-  
+
       } else if (!season.localeCompare('fall')) {
         variant = "warning";
       }
     }
 
-    return <ProgressBar key={monthNumber} 
-      label={label} variant={variant} now={10} />;
+    /*
+     * If month is the current month, set style to an empty object. Allows
+     * only the current month to have a special style.
+     */
+    if (currMonth === monthNumber) {
+      style = {textDecoration: "underline"};
+    }
+
+    return <ProgressBar key={monthNumber}
+      label={label} variant={variant} now={10}
+      style={style} />;
   }
 
   /**
