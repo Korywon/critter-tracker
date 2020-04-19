@@ -4,6 +4,7 @@ import { Badge, Card, Col, Container, Row } from 'react-bootstrap';
 
 import MonthUtility from '../../utility/month-utility';
 import MonthBar from '../month-bar.component';
+import TimeBadge from '../time-badge.component';
 
 import BreadcrumbMenu from '../breadcrumb.component';
 import StatusBadges from '../status-badges.component';
@@ -83,25 +84,7 @@ const Size = props => {
   );
 }
 
-const Time = props => {
-  if (props.time.length === 0) {
-    return(
-      <>
-        <h6>Time</h6>
-        <Badge variant="info">all-day</Badge>
-      </>
-    );
-  } else {
-    return(
-      <>
-        <h6>Time</h6>
-      </>
-    );
-  }
-}
-
 const Fish = props => {
-
   if (Object.keys(props.fish).length > 0) {
     return (
       <Card>
@@ -120,7 +103,7 @@ const Fish = props => {
             <hr />
             <Status fish={props.fish} />
             <hr />
-            <Time time={props.fish.time ? props.fish.time : []} />
+            <TimeBadge time={props.fish.time ? props.fish.time : []} />
             <hr />
           </div>
           <Row>
