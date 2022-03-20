@@ -15,6 +15,9 @@ def get_html_soup(path: str):
     print('DONE')
     return BeautifulSoup(response.text, 'html.parser')
 
+def get_available_times(cell):
+    return cell.text.strip().lower().replace('\u2013', '-')
+
 def get_available_months(cell):
     north_spans = cell.span.find_all('span')
     south_spans = cell.p.span.find_all('span')
@@ -63,7 +66,7 @@ def get_fish_data():
         price = cells[3].text.strip().lower()
         size = cells[4].text.strip().lower()
         location = cells[5].text.strip().lower()
-        time = cells[6].text.strip().lower()
+        time = get_available_times(cells[6])
         months = get_available_months(cells[7])
         total_catches = cells[8].text.strip().lower()
 
@@ -107,7 +110,7 @@ def get_bug_data():
         price = cells[3].text.strip().lower()
         location = cells[4].text.strip().lower()
         weather = cells[5].text.strip().lower()
-        time = cells[6].text.strip().lower()
+        time = get_available_times(cells[6])
         months = get_available_months(cells[7])
         total_catches = cells[8].text.strip().lower()
 
