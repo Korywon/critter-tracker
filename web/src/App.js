@@ -1,4 +1,3 @@
-import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -35,7 +34,7 @@ function App() {
       </Switch>
       <br />
       <Container className="text-center">
-        <a className="text-dark" 
+        <a className="text-dark"
           href="https://www.github.com/korywon/critter-tracker"
           rel="noopener noreferrer" target="_blank">
           <FontAwesomeIcon icon={faGithub} size="6x" />
