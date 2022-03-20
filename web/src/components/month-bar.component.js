@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 
 import MonthUtility from '../utility/month-utility';
 import { ProgressBar } from 'react-bootstrap';

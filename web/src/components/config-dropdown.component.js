@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Badge, Col, Form } from 'react-bootstrap';
 
 // TODO: Implement ways to switch between different configs.
