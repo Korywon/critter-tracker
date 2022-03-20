@@ -17,30 +17,17 @@ export default class MonthUtility {
     /*
      * If current month is out of the range of valid month numbers.
      */
-    if (currMonth < 0 || currMonth > 11) {
-      console.error(
-        `[ ERROR ]: Current month (${currMonth}) is invalid!`
-      );
-      return false;
-    }
+    if (currMonth < 0 || currMonth > 11) return false;
 
     /*
      * If time span from is out of the range of valid month numbers.
      */
-    if (timeSpan.from < 0 || timeSpan.from > 11) {
-      console.error(`[ ERROR ]: Time span from (${timeSpan.from}) is invalid!`);
-      return false;
-    }
+    if (timeSpan.from < 0 || timeSpan.from > 11) return false;
 
     /*
      * If time span through is out of the range of valid month numbers.
      */
-    if (timeSpan.through < 0 || timeSpan.through > 11) {
-      console.error(
-        `[ ERROR ]: Time span through (${timeSpan.through}) is invalid!`
-      );
-      return false;
-    }
+    if (timeSpan.through < 0 || timeSpan.through > 11) return false;
 
     /*
      * If the range goes over into the next year, e.g. December to Jenuary. Else
