@@ -1,7 +1,7 @@
 export default class MonthUtility {
   /**
    * Returns the next month after the given month and wraps after 11.
-   * @param {Number} currMonth 
+   * @param {Number} currMonth
    */
   static getNextMonth(currMonth) {
     return currMonth + 1 > 11 ? 0 : currMonth + 1;
@@ -10,8 +10,8 @@ export default class MonthUtility {
   /**
    * Returns true if current month is in the timespan. False if not and if
    * the currMonth and timeSpan arguments are invalid.
-   * @param {Number} currMonth 
-   * @param {Number} timeSpan 
+   * @param {Number} currMonth
+   * @param {Number} timeSpan
    */
   static inTimeSpan(currMonth, timeSpan) {
     /*
@@ -41,14 +41,14 @@ export default class MonthUtility {
       );
       return false;
     }
-      
+
     /*
      * If the range goes over into the next year, e.g. December to Jenuary. Else
      * if the range is between the two values.
      */
     if (timeSpan.from > timeSpan.through) {
       /*
-       * If the current month is between the two values. 
+       * If the current month is between the two values.
        */
       if (currMonth >= timeSpan.from || currMonth <= timeSpan.through) {
         return true;
@@ -65,8 +65,8 @@ export default class MonthUtility {
   /**
    * Loops through each time span in the array and checks if the month is
    * within any of the time spans.
-   * @param {Number} currMonth 
-   * @param {Array} timeSpanArr 
+   * @param {Number} currMonth
+   * @param {Array} timeSpanArr
    */
   static inTimeSpans(currMonth, timeSpanArr) {
     let inSpans = false;
@@ -82,8 +82,8 @@ export default class MonthUtility {
 
   /**
    * Returns the status object based on the months object and current month.
-   * @param {Number} currMonth 
-   * @param {Object} months 
+   * @param {Number} currMonth
+   * @param {Object} months
    */
   static getStatusTimeSpans (currMonth, timeSpans) {
     const nextMonth = this.getNextMonth(currMonth);
@@ -118,14 +118,14 @@ export default class MonthUtility {
         }
 
         /*
-         * If the time span start is this month. 
+         * If the time span start is this month.
          */
         if (span.from === currMonth) {
           status.new = true;
         }
 
         /*
-         * If the time span starts next month. 
+         * If the time span starts next month.
          */
         if (span.from === nextMonth) {
           status.soon = true;
@@ -174,9 +174,9 @@ export default class MonthUtility {
   }
 
   /**
-   * 
-   * @param {*} currMonth 
-   * @param {*} months 
+   *
+   * @param {*} currMonth
+   * @param {*} months
    */
   static getStatusHemispheres(currMonth, months) {
     let status = {
@@ -192,13 +192,13 @@ export default class MonthUtility {
 
     status.north = this.getStatusTimeSpans(currMonth, months.north);
     status.south = this.getStatusTimeSpans(currMonth, months.south);
-    
+
     return status;
   }
 
   /**
    * Returns the month name based on the given month number.
-   * @param {Number} month 
+   * @param {Number} month
    */
   static getMonthName(month) {
     let names = [
@@ -211,14 +211,14 @@ export default class MonthUtility {
     if (month < 0 || month > 11) {
       return null;
     }
-    
+
     return names[month];
   }
 
   /**
    * Returns the season string based on the given month number. The seasons
    * returned by this function correlates with the seasons in Animal Crossing.
-   * @param {Number} currMonth 
+   * @param {Number} currMonth
    */
   static getMonthSeason(currMonth) {
     switch (currMonth) {
