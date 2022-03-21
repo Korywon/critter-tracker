@@ -30,10 +30,10 @@ def get_available_months(cell):
 
     for i, month in enumerate(north_spans):
         if 'font-weight' in month['style']:
-            months['north'].append(i+1)
+            months['north'].append(i)
     for i, month in enumerate(south_spans):
         if 'font-weight' in month['style']:
-            months['south'].append(i+1)
+            months['south'].append(i)
 
     return months
 
@@ -107,7 +107,6 @@ def get_bug_data():
         time = get_available_times(cells[6])
         months = get_available_months(cells[7])
         total_catches = cells[8].text.strip().lower()
-
 
         bug_data.append({
             'number': int(number),
