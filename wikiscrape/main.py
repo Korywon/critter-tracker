@@ -1,8 +1,9 @@
 #!/opt/homebrew/bin/python3
 
 from bs4 import BeautifulSoup
-import requests
 import json
+import requests
+import threading
 
 wiki_url = 'https://nookipedia.com'
 fish_list_path = '/wiki/Fish/New_Horizons'
@@ -10,11 +11,11 @@ bug_list_path = '/wiki/Bugs/New_Horizons'
 table_class = 'sortable'
 
 def get_html_soup(path: str):
-    print(f'Requesting data from "{path}"...', end='')
+    print(f'Requesting data from "{path}".')
     response = requests.get(path)
-    print('DONE')
     return BeautifulSoup(response.text, 'html.parser')
 
+# Convert Unicode dashes to ASCII dashes.
 def get_available_times(cell):
     return cell.text.strip().lower().replace('\u2013', '-')
 
@@ -37,20 +38,16 @@ def get_available_months(cell):
     return months
 
 def write_json_file(filename: str, data):
-    print(f'Writing to {filename}...', end='')
+    print(f'Writing to "{filename}".')
 
     with open(filename, 'w') as file:
         json.dump(data, file, indent=2)
-
-    print('DONE')
 
 def get_fish_data():
     soup = get_html_soup(f'{wiki_url}{fish_list_path}')
 
     fish_table = soup.find('table', attrs={'class': table_class})
     rows = fish_table.find('tbody').find_all('tr')
-
-    print(f'Found {len(rows)} fishes. Parsing...', end='')
 
     fish_data = []
 
@@ -83,18 +80,15 @@ def get_fish_data():
             'total_catches': total_catches
         })
 
-    print('DONE')
+    print(f'Parsed {len(fish_data)} fish entries.')
 
     return fish_data
-
 
 def get_bug_data():
     soup = get_html_soup(f'{wiki_url}{bug_list_path}')
 
     bug_table = soup.find('table', attrs={'class': table_class})
     rows = bug_table.find('tbody').find_all('tr')
-
-    print(f'Found {len(rows)} bugs. Parsing...', end='')
 
     bug_data = []
 
@@ -127,14 +121,29 @@ def get_bug_data():
             'total_catches': total_catches
         })
 
-    print('DONE')
+    print(f'Parsed {len(bug_data)} fish entries.')
 
     return bug_data
 
-if __name__ == '__main__':
+def get_write_fish_data():
     fish_data = get_fish_data()
-    bug_data = get_bug_data()
     write_json_file('fish.json', fish_data)
+
+def get_write_bug_data():
+    bug_data = get_bug_data()
     write_json_file('bug.json', bug_data)
+
+if __name__ == '__main__':
+    # create thread tasks
+    t1 = threading.Thread(target=get_write_fish_data)
+    t2 = threading.Thread(target=get_write_bug_data)
+
+    # start the thread
+    t1.start()
+    t2.start()
+
+    # wait for threads to finish
+    t1.join()
+    t2.join()
 
     print('All tasks finished!')
