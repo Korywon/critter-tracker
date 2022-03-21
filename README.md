@@ -1,5 +1,7 @@
 # AC:NH Critter Tracker
 
+[![Node.js CI](https://github.com/Korywon/critter-tracker/actions/workflows/nodejs.yml/badge.svg)](https://github.com/Korywon/critter-tracker/actions/workflows/nodejs.yml)
+
 This was originally created to have a simple way of tracking the current statuses of all critters (bugs and fishes) in Animal Crossing: New Horizons. Due to the mass amount of information floating around the web, it is a rather nice way of consolidating information in a single spot, while presenting it in a clean, simple way. Less time clicking links, more time catching critters.
 
 This web application is still under construction and will continue to be.
