@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react';
 import { Badge } from 'react-bootstrap';
 
 import TimeUtility from '../utility/time-utility';
@@ -24,7 +24,7 @@ export default function TimeBadge({id, time}) {
     const endVariant = TimeUtility.isDay(currTime.start) ? 'light' : 'dark';
 
     return(
-      <React.Fragment key={id + 'time-badge-index'}>
+      <React.Fragment key={`${id}-time-badge-${index}`}>
         <Badge variant={startVariant}>
           {start12.hour + end12.meridiem}
         </Badge>
