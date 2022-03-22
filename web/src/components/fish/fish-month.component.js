@@ -1,21 +1,10 @@
-import { Component } from 'react';
+import { useEffect } from 'react';
 import axios from 'axios';
 
-export default class FishMonth extends Component {
-  constructor (props) {
-    super(props);
+export default function FishMonth() {
+  const [fishList, setFishList] = useState({})
 
-    this.state = { fishList: [] };
-  }
-  render () {
-    return (
-      <h4 className="text-center">
-        Fish month under construction!
-      </h4>
-    );
-  }
-
-  componentDidMount () {
+  useEffect(() => {
     axios.get('/data/fish.json')
       .then(response => {
         let tempResponse = response;
@@ -23,10 +12,16 @@ export default class FishMonth extends Component {
         // TODO: Implement props.
         // TODO: Implement JSON parsing.
 
-        this.setState({fishList: tempResponse.data});
+        setFishList(tempResponse.data);
       })
       .catch((error) => {
         console.error(error);
       });
-  }
+  })
+
+  return (
+    <h4 className="text-center">
+      Fish month under construction!
+    </h4>
+  );
 }
