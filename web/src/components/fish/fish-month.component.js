@@ -4,7 +4,7 @@ import axios from 'axios';
 export default class FishMonth extends Component {
   constructor (props) {
     super(props);
-    
+
     this.state = { fishList: [] };
   }
   render () {
@@ -14,7 +14,7 @@ export default class FishMonth extends Component {
       </h4>
     );
   }
-  
+
   componentDidMount () {
     axios.get('/data/fish.json')
       .then(response => {
