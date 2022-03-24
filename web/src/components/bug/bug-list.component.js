@@ -1,11 +1,14 @@
-import { Component } from 'react';
+import BugTable from './bug-table.component'
 
-export default class FishInfo extends Component {
-  render () {
-    return (
+import { Container } from 'react-bootstrap';
+
+export default function BugList() {
+  return (
+    <Container>
       <div className="text-center">
         This will be the bug list in the future.
       </div>
-    );
-  }
+      <BugTable />
+    </Container>
+  );
 }

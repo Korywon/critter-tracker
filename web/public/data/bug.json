@@ -1,639 +1,2184 @@
-[{
-    "name": "commbutterfly",
+[
+  {
+    "number": 1,
+    "name": "common butterfly",
+    "image": "https://dodo.ac/np/images/thumb/f/f8/Common_Butterfly_NH_Icon.png/64px-Common_Butterfly_NH_Icon.png",
     "price": 160,
     "location": "flying",
-    "time": [{
-      "start": 4,
-      "end": 19
-    }]
+    "weather": "any except rain",
+    "time": "4 am - 7 pm",
+    "months": {
+      "north": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11
+      ],
+      "south": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
   },
   {
+    "number": 2,
     "name": "yellow butterfly",
+    "image": "https://dodo.ac/np/images/thumb/4/43/Yellow_Butterfly_NH_Icon.png/64px-Yellow_Butterfly_NH_Icon.png",
     "price": 160,
     "location": "flying",
-    "time": [{
-      "start": 4,
-      "end": 19
-    }]
+    "weather": "any except rain",
+    "time": "4 am -\u00a07 pm",
+    "months": {
+      "north": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        9
+      ],
+      "south": [
+        2,
+        3,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
   },
   {
+    "number": 3,
     "name": "tiger butterfly",
+    "image": "https://dodo.ac/np/images/thumb/b/b6/Tiger_Butterfly_NH_Icon.png/64px-Tiger_Butterfly_NH_Icon.png",
     "price": 240,
     "location": "flying",
-    "time": [{
-      "start": 4,
-      "end": 19
-    }]
+    "weather": "any except rain",
+    "time": "4 am - 7 pm",
+    "months": {
+      "north": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
   },
   {
+    "number": 4,
     "name": "peacock butterfly",
+    "image": "https://dodo.ac/np/images/thumb/7/77/Peacock_Butterfly_NH_Icon.png/64px-Peacock_Butterfly_NH_Icon.png",
     "price": 2500,
-    "location": "flying (hybrid flowers)",
-    "time": [{
-      "start": 4,
-      "end": 19
-    }]
+    "location": "flying near blue, purple, and black flowers",
+    "weather": "any except rain",
+    "time": "4 am - 7 pm",
+    "months": {
+      "north": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "south": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "20"
   },
   {
+    "number": 5,
     "name": "common bluebottle",
+    "image": "https://dodo.ac/np/images/thumb/2/21/Common_Bluebottle_NH_Icon.png/64px-Common_Bluebottle_NH_Icon.png",
     "price": 300,
     "location": "flying",
-    "time": [{
-      "start": 4,
-      "end": 19
-    }]
+    "weather": "any except rain",
+    "time": "4 am - 7 pm",
+    "months": {
+      "north": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
   },
   {
+    "number": 6,
     "name": "paper kite butterfly",
+    "image": "https://dodo.ac/np/images/thumb/9/9e/Paper_Kite_Butterfly_NH_Icon.png/64px-Paper_Kite_Butterfly_NH_Icon.png",
     "price": 1000,
-    "location": "flying",
-    "time": [{
-      "start": 8,
-      "end": 19
-    }]
+    "location": "flying near flowers",
+    "weather": "any except rain",
+    "time": "8 am - 7 pm",
+    "months": {
+      "north": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
   },
   {
+    "number": 7,
     "name": "great purple emperor",
+    "image": "https://dodo.ac/np/images/thumb/8/81/Great_Purple_Emperor_NH_Icon.png/64px-Great_Purple_Emperor_NH_Icon.png",
     "price": 3000,
-    "location": "flying",
-    "time": [{
-      "start": 4,
-      "end": 19
-    }]
+    "location": "flying near flowers",
+    "weather": "any except rain",
+    "time": "4 am - 7 pm",
+    "months": {
+      "north": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1,
+        10,
+        11
+      ]
+    },
+    "total_catches": "50"
   },
   {
+    "number": 8,
     "name": "monarch butterfly",
+    "image": "https://dodo.ac/np/images/thumb/3/38/Monarch_Butterfly_NH_Icon.png/64px-Monarch_Butterfly_NH_Icon.png",
     "price": 140,
-    "location": "flying",
-    "time": [{
-      "start": 4,
-      "end": 17
-    }]
+    "location": "flying near flowers",
+    "weather": "any except rain",
+    "time": "4 am - 5 pm",
+    "months": {
+      "north": [
+        8,
+        9,
+        10
+      ],
+      "south": [
+        2,
+        3,
+        4
+      ]
+    },
+    "total_catches": "0"
   },
   {
+    "number": 9,
     "name": "emperor butterfly",
+    "image": "https://dodo.ac/np/images/thumb/c/cf/Emperor_Butterfly_NH_Icon.png/64px-Emperor_Butterfly_NH_Icon.png",
     "price": 4000,
-    "location": "flying",
-    "time": [{
-      "start": 17,
-      "end": 8
-    }]
+    "location": "flying near flowers",
+    "weather": "any except rain",
+    "time": "5 pm - 8 am",
+    "months": {
+      "north": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        11
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        11
+      ]
+    },
+    "total_catches": "20"
   },
   {
+    "number": 10,
     "name": "agrias butterfly",
+    "image": "https://dodo.ac/np/images/thumb/6/60/Agrias_Butterfly_NH_Icon.png/64px-Agrias_Butterfly_NH_Icon.png",
     "price": 3000,
-    "location": "flying",
-    "time": [{
-      "start": 8,
-      "end": 17
-    }]
+    "location": "flying near flowers",
+    "weather": "any except rain",
+    "time": "8 am - 5 pm",
+    "months": {
+      "north": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "20"
   },
   {
+    "number": 11,
     "name": "rajah brooke's birdwing",
+    "image": "https://dodo.ac/np/images/thumb/8/81/Rajah_Brooke%27s_Birdwing_NH_Icon.png/64px-Rajah_Brooke%27s_Birdwing_NH_Icon.png",
     "price": 2500,
-    "location": "flying",
-    "time": [{
-      "start": 8,
-      "end": 17
-    }]
+    "location": "flying near flowers",
+    "weather": "any except rain",
+    "time": "8 am - 5 pm",
+    "months": {
+      "north": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "20"
   },
   {
+    "number": 12,
     "name": "queen alexandra's birdwing",
+    "image": "https://dodo.ac/np/images/thumb/b/bb/Queen_Alexandra%27s_Birdwing_NH_Icon.png/64px-Queen_Alexandra%27s_Birdwing_NH_Icon.png",
     "price": 4000,
-    "location": "flying",
-    "time": [{
-      "start": 8,
-      "end": 16
-    }]
+    "location": "flying near flowers",
+    "weather": "any except rain",
+    "time": "8 am - 4 pm",
+    "months": {
+      "north": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        10,
+        11
+      ]
+    },
+    "total_catches": "50"
   },
   {
+    "number": 13,
     "name": "moth",
+    "image": "https://dodo.ac/np/images/thumb/a/a0/Moth_NH_Icon.png/64px-Moth_NH_Icon.png",
     "price": 130,
-    "location": "flying by light",
-    "time": [{
-      "start": 19,
-      "end": 4
-    }]
+    "location": "flying near light sources",
+    "weather": "any except rain",
+    "time": "7 pm - 4 am",
+    "months": {
+      "north": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
   },
   {
+    "number": 14,
     "name": "atlas moth",
+    "image": "https://dodo.ac/np/images/thumb/7/7f/Atlas_Moth_NH_Icon.png/64px-Atlas_Moth_NH_Icon.png",
     "price": 3000,
-    "location": "trees",
-    "time": [{
-      "start": 19,
-      "end": 4
-    }]
+    "location": "on trees (any kind)",
+    "weather": "any weather",
+    "time": "7 pm - 4 am",
+    "months": {
+      "north": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "20"
   },
   {
+    "number": 15,
     "name": "madagascan sunset moth",
+    "image": "https://dodo.ac/np/images/thumb/6/69/Madagascan_Sunset_Moth_NH_Icon.png/64px-Madagascan_Sunset_Moth_NH_Icon.png",
     "price": 2500,
-    "location": "flying",
-    "time": [{
-      "start": 8,
-      "end": 16
-    }]
+    "location": "flying near flowers",
+    "weather": "any except rain",
+    "time": "8 am - 4 pm",
+    "months": {
+      "north": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "20"
   },
   {
+    "number": 16,
     "name": "long locust",
+    "image": "https://dodo.ac/np/images/thumb/9/9d/Long_Locust_NH_Icon.png/64px-Long_Locust_NH_Icon.png",
     "price": 200,
-    "location": "ground",
-    "time": [{
-      "start": 8,
-      "end": 19
-    }]
+    "location": "on the ground",
+    "weather": "any weather",
+    "time": "8 am - 7 pm",
+    "months": {
+      "north": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
   },
   {
+    "number": 17,
     "name": "migratory locust",
+    "image": "https://dodo.ac/np/images/thumb/d/d0/Migratory_Locust_NH_Icon.png/64px-Migratory_Locust_NH_Icon.png",
     "price": 600,
-    "location": "ground",
-    "time": [{
-      "start": 8,
-      "end": 19
-    }]
+    "location": "on the ground",
+    "weather": "any weather",
+    "time": "8 am - 7 pm",
+    "months": {
+      "north": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "south": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "total_catches": "20"
   },
   {
+    "number": 18,
     "name": "rice grasshopper",
-    "price": 160,
-    "location": "ground",
-    "time": [{
-      "start": 8,
-      "end": 19
-    }]
-  },
-  {
-    "name": "grasshopper",
-    "price": 160,
-    "location": "ground",
-    "time": [{
-      "start": 8,
-      "end": 17
-    }]
-  },
-  {
-    "name": "cricket",
-    "price": 130,
-    "location": "ground",
-    "time": [{
-      "start": 17,
-      "end": 8
-    }]
-  },
-  {
-    "name": "bell cricket",
-    "price": 430,
-    "location": "ground",
-    "time": [{
-      "start": 17,
-      "end": 8
-    }]
-  },
-  {
-    "name": "mantis",
-    "price": 430,
-    "location": "flowers",
-    "time": [{
-      "start": 8,
-      "end": 17
-    }]
-  },
-  {
-    "name": "orchid mantis",
-    "price": 2400,
-    "location": "flowers (white)",
-    "time": [{
-      "start": 8,
-      "end": 17
-    }]
-  },
-  {
-    "name": "honeybee",
-    "price": 200,
-    "location": "flying",
-    "time": [{
-      "start": 8,
-      "end": 17
-    }]
-  },
-  {
-    "name": "wasp",
-    "price": 2500,
-    "location": "trees (shaking)"
-  },
-  {
-    "name": "brown cicada",
-    "price": 250,
-    "location": "trees",
-    "time": [{
-      "start": 8,
-      "end": 17
-    }]
-  },
-  {
-    "name": "robust cicada",
-    "price": 300,
-    "location": "trees",
-    "time": [{
-      "start": 8,
-      "end": 17
-    }]
-  },
-  {
-    "name": "giant cicada",
-    "price": 500,
-    "location": "trees",
-    "time": [{
-      "start": 8,
-      "end": 17
-    }]
-  },
-  {
-    "name": "walker cicada",
+    "image": "https://dodo.ac/np/images/thumb/7/78/Rice_Grasshopper_NH_Icon.png/64px-Rice_Grasshopper_NH_Icon.png",
     "price": 400,
-    "location": "trees",
-    "time": [{
-      "start": 8,
-      "end": 17
-    }]
+    "location": "on the ground",
+    "weather": "any weather",
+    "time": "8 am - 7 pm",
+    "months": {
+      "north": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "south": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "total_catches": "0"
   },
   {
-    "name": "evening cicada",
-    "price": 550,
-    "location": "trees",
-    "time": [{
-        "start": 4,
-        "end": 8
-      },
-      {
-        "start": 16,
-        "end": 19
-      }
-    ]
+    "number": 19,
+    "name": "grasshopper",
+    "image": "https://dodo.ac/np/images/thumb/3/37/Grasshopper_NH_Icon.png/64px-Grasshopper_NH_Icon.png",
+    "price": 160,
+    "location": "on the ground",
+    "weather": "any except rain",
+    "time": "8 am - 5 pm",
+    "months": {
+      "north": [
+        6,
+        7,
+        8
+      ],
+      "south": [
+        0,
+        1,
+        2
+      ]
+    },
+    "total_catches": "0"
   },
   {
-    "name": "cicada shell",
-    "price": 10,
-    "location": "trees"
-  },
-  {
-    "name": "red dragonfly",
-    "price": 180,
-    "location": "flying",
-    "time": [{
-      "start": 8,
-      "end": 19
-    }]
-  },
-  {
-    "name": "darner dragonfly",
-    "price": 230,
-    "location": "flying",
-    "time": [{
-      "start": 8,
-      "end": 17
-    }]
-  },
-  {
-    "name": "banded dragonfly",
-    "price": 4500,
-    "location": "flying",
-    "time": [{
-      "start": 8,
-      "end": 17
-    }]
-  },
-  {
-    "name": "damselfly",
-    "price": 500,
-    "location": "flying"
-  },
-  {
-    "name": "firefly",
-    "price": 300,
-    "location": "flying",
-    "time": [{
-      "start": 19,
-      "end": 4
-    }]
-  },
-  {
-    "name": "mole cricket",
-    "price": 500,
-    "location": "underground"
-  },
-  {
-    "name": "pondskater",
+    "number": 20,
+    "name": "cricket",
+    "image": "https://dodo.ac/np/images/thumb/8/8f/Cricket_NH_Icon.png/64px-Cricket_NH_Icon.png",
     "price": 130,
-    "location": "ponds and rivers",
-    "time": [{
-      "start": 8,
-      "end": 19
-    }]
+    "location": "on the ground",
+    "weather": "any except rain",
+    "time": "5 pm - 8 am",
+    "months": {
+      "north": [
+        8,
+        9,
+        10
+      ],
+      "south": [
+        2,
+        3,
+        4
+      ]
+    },
+    "total_catches": "0"
   },
   {
-    "name": "diving beetle",
-    "price": 800,
-    "location": "ponds and rivers",
-    "time": [{
-      "start": 8,
-      "end": 19
-    }]
+    "number": 21,
+    "name": "bell cricket",
+    "image": "https://dodo.ac/np/images/thumb/4/4a/Bell_Cricket_NH_Icon.png/64px-Bell_Cricket_NH_Icon.png",
+    "price": 430,
+    "location": "on the ground",
+    "weather": "any except rain",
+    "time": "5 pm - 8 am",
+    "months": {
+      "north": [
+        8,
+        9
+      ],
+      "south": [
+        2,
+        3
+      ]
+    },
+    "total_catches": "0"
   },
   {
-    "name": "giant water bug",
-    "price": 2000,
-    "location": "ponds and rivers",
-    "time": [{
-      "start": 19,
-      "end": 8
-    }]
+    "number": 22,
+    "name": "mantis",
+    "image": "https://dodo.ac/np/images/thumb/4/4e/Mantis_NH_Icon.png/64px-Mantis_NH_Icon.png",
+    "price": 430,
+    "location": "on flowers",
+    "weather": "any except rain",
+    "time": "8 am - 5 pm",
+    "months": {
+      "north": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
   },
   {
-    "name": "stinkbug",
-    "price": 120,
-    "location": "flowers"
-  },
-  {
-    "name": "man-faced stink bug",
-    "price": 1000,
-    "location": "flowers",
-    "time": [{
-      "start": 19,
-      "end": 8
-    }]
-  },
-  {
-    "name": "ladybug",
-    "price": 200,
-    "location": "flowers",
-    "time": [{
-      "start": 8,
-      "end": 17
-    }]
-  },
-  {
-    "name": "tiger beetle",
-    "price": 1500,
-    "location": "ground"
-  },
-  {
-    "name": "jewel beetle",
+    "number": 23,
+    "name": "orchid mantis",
+    "image": "https://dodo.ac/np/images/thumb/a/a7/Orchid_Mantis_NH_Icon.png/64px-Orchid_Mantis_NH_Icon.png",
     "price": 2400,
-    "location": "tree (stumps)"
+    "location": "on white flowers",
+    "weather": "any except rain",
+    "time": "8 am - 5 pm",
+    "months": {
+      "north": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "20"
   },
   {
-    "name": "violin beetle",
-    "price": 450,
-    "location": "tree (stumps)"
+    "number": 24,
+    "name": "honeybee",
+    "image": "https://dodo.ac/np/images/thumb/5/51/Honeybee_NH_Icon.png/64px-Honeybee_NH_Icon.png",
+    "price": 200,
+    "location": "flying near flowers",
+    "weather": "any except rain",
+    "time": "8 am - 5 pm",
+    "months": {
+      "north": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "south": [
+        0,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
   },
   {
-    "name": "citrus long-horned beetle",
-    "price": 350,
-    "location": "tree (stumps)"
+    "number": 25,
+    "name": "wasp",
+    "image": "https://dodo.ac/np/images/thumb/a/a5/Wasp_NH_Icon.png/64px-Wasp_NH_Icon.png",
+    "price": 2500,
+    "location": "shaking trees",
+    "weather": "any weather",
+    "time": "all day",
+    "months": {
+      "north": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
   },
   {
-    "name": "rosalia batesi beetle",
-    "price": 3000,
-    "location": "tree (stumps)"
+    "number": 26,
+    "name": "brown cicada",
+    "image": "https://dodo.ac/np/images/thumb/4/44/Brown_Cicada_NH_Icon.png/64px-Brown_Cicada_NH_Icon.png",
+    "price": 250,
+    "location": "on trees (hardwood and cedar)",
+    "weather": "any weather",
+    "time": "8 am - 5 pm",
+    "months": {
+      "north": [
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1
+      ]
+    },
+    "total_catches": "0"
   },
   {
-    "name": "blue weevil beetle",
-    "price": 800,
-    "location": "trees (coconut)"
-  },
-  {
-    "name": "dung beetle",
-    "price": 3000,
-    "location": "ground (rolling snowballs)"
-  },
-  {
-    "name": "earth-boring dung beetle",
+    "number": 27,
+    "name": "robust cicada",
+    "image": "https://dodo.ac/np/images/thumb/a/a2/Robust_Cicada_NH_Icon.png/64px-Robust_Cicada_NH_Icon.png",
     "price": 300,
-    "location": "ground"
+    "location": "on trees (hardwood and cedar)",
+    "weather": "any weather",
+    "time": "8 am - 5 pm",
+    "months": {
+      "north": [
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1
+      ]
+    },
+    "total_catches": "0"
   },
   {
-    "name": "scarab beetle",
-    "price": 10000,
-    "location": "trees",
-    "time": [{
-      "start": 23,
-      "end": 8
-    }]
+    "number": 28,
+    "name": "giant cicada",
+    "image": "https://dodo.ac/np/images/thumb/e/e3/Giant_Cicada_NH_Icon.png/64px-Giant_Cicada_NH_Icon.png",
+    "price": 500,
+    "location": "on trees (hardwood and cedar)",
+    "weather": "any weather",
+    "time": "8 am - 5 pm",
+    "months": {
+      "north": [
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1
+      ]
+    },
+    "total_catches": "20"
   },
   {
-    "name": "drone beetle",
-    "price": 200,
-    "location": "trees"
+    "number": 29,
+    "name": "walker cicada",
+    "image": "https://dodo.ac/np/images/thumb/f/f8/Walker_Cicada_NH_Icon.png/64px-Walker_Cicada_NH_Icon.png",
+    "price": 400,
+    "location": "on trees (hardwood and cedar)",
+    "weather": "any weather",
+    "time": "8 am - 5 pm",
+    "months": {
+      "north": [
+        7,
+        8
+      ],
+      "south": [
+        1,
+        2
+      ]
+    },
+    "total_catches": "0"
   },
   {
-    "name": "goliath beetle",
-    "price": 8000,
-    "location": "trees (coconut)",
-    "time": [{
-      "start": 17,
-      "end": 8
-    }]
+    "number": 30,
+    "name": "evening cicada",
+    "image": "https://dodo.ac/np/images/thumb/b/ba/Evening_Cicada_NH_Icon.png/64px-Evening_Cicada_NH_Icon.png",
+    "price": 550,
+    "location": "on trees (hardwood and cedar)",
+    "weather": "any weather",
+    "time": "4 am - 8 am & 4 pm - 7 pm",
+    "months": {
+      "north": [
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1
+      ]
+    },
+    "total_catches": "0"
   },
   {
-    "name": "saw stag",
+    "number": 31,
+    "name": "cicada shell",
+    "image": "https://dodo.ac/np/images/thumb/d/d1/Cicada_Shell_NH_Icon.png/64px-Cicada_Shell_NH_Icon.png",
+    "price": 10,
+    "location": "on trees (hardwood and cedar)",
+    "weather": "any weather",
+    "time": "all day",
+    "months": {
+      "north": [
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1
+      ]
+    },
+    "total_catches": "50"
+  },
+  {
+    "number": 32,
+    "name": "red dragonfly",
+    "image": "https://dodo.ac/np/images/thumb/0/09/Red_Dragonfly_NH_Icon.png/64px-Red_Dragonfly_NH_Icon.png",
+    "price": 180,
+    "location": "flying near water",
+    "weather": "any except rain",
+    "time": "8 am - 7 pm",
+    "months": {
+      "north": [
+        8,
+        9
+      ],
+      "south": [
+        2,
+        3
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 33,
+    "name": "darner dragonfly",
+    "image": "https://dodo.ac/np/images/thumb/5/5c/Darner_Dragonfly_NH_Icon.png/64px-Darner_Dragonfly_NH_Icon.png",
+    "price": 230,
+    "location": "flying near water",
+    "weather": "any except rain",
+    "time": "8 am - 5 pm",
+    "months": {
+      "north": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 34,
+    "name": "banded dragonfly",
+    "image": "https://dodo.ac/np/images/thumb/3/35/Banded_Dragonfly_NH_Icon.png/64px-Banded_Dragonfly_NH_Icon.png",
+    "price": 4500,
+    "location": "flying near water",
+    "weather": "any except rain",
+    "time": "8 am - 5 pm",
+    "months": {
+      "north": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        10,
+        11
+      ]
+    },
+    "total_catches": "50"
+  },
+  {
+    "number": 35,
+    "name": "damselfly",
+    "image": "https://dodo.ac/np/images/thumb/c/c8/Damselfly_NH_Icon.png/64px-Damselfly_NH_Icon.png",
+    "price": 500,
+    "location": "flying near water",
+    "weather": "any except rain",
+    "time": "all day",
+    "months": {
+      "north": [
+        0,
+        1,
+        10,
+        11
+      ],
+      "south": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 36,
+    "name": "firefly",
+    "image": "https://dodo.ac/np/images/thumb/d/d6/Firefly_NH_Icon.png/64px-Firefly_NH_Icon.png",
+    "price": 300,
+    "location": "flying near water",
+    "weather": "any except rain",
+    "time": "7 pm - 4 am",
+    "months": {
+      "north": [
+        5
+      ],
+      "south": [
+        11
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 37,
+    "name": "mole cricket",
+    "image": "https://dodo.ac/np/images/thumb/4/4f/Mole_Cricket_NH_Icon.png/64px-Mole_Cricket_NH_Icon.png",
+    "price": 500,
+    "location": "underground",
+    "weather": "any weather",
+    "time": "all day",
+    "months": {
+      "north": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        10,
+        11
+      ],
+      "south": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 38,
+    "name": "pondskater",
+    "image": "https://dodo.ac/np/images/thumb/1/1f/Pondskater_NH_Icon.png/64px-Pondskater_NH_Icon.png",
+    "price": 130,
+    "location": "on rivers and ponds",
+    "weather": "any weather",
+    "time": "8 am - 7 pm",
+    "months": {
+      "north": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 39,
+    "name": "diving beetle",
+    "image": "https://dodo.ac/np/images/thumb/7/78/Diving_Beetle_NH_Icon.png/64px-Diving_Beetle_NH_Icon.png",
+    "price": 800,
+    "location": "on rivers and ponds",
+    "weather": "any weather",
+    "time": "8 am - 7 pm",
+    "months": {
+      "north": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 40,
+    "name": "giant water bug",
+    "image": "https://dodo.ac/np/images/thumb/8/86/Giant_Water_Bug_NH_Icon.png/64px-Giant_Water_Bug_NH_Icon.png",
     "price": 2000,
-    "location": "trees"
+    "location": "on rivers and ponds",
+    "weather": "any weather",
+    "time": "7 pm - 8 am",
+    "months": {
+      "north": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "50"
   },
   {
-    "name": "miyama stag",
+    "number": 41,
+    "name": "stinkbug",
+    "image": "https://dodo.ac/np/images/thumb/4/42/Stinkbug_NH_Icon.png/64px-Stinkbug_NH_Icon.png",
+    "price": 120,
+    "location": "on flowers",
+    "weather": "any except rain",
+    "time": "all day",
+    "months": {
+      "north": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 42,
+    "name": "man-faced stink bug",
+    "image": "https://dodo.ac/np/images/thumb/a/ac/Man-Faced_Stink_Bug_NH_Icon.png/64px-Man-Faced_Stink_Bug_NH_Icon.png",
     "price": 1000,
-    "location": "trees"
+    "location": "on flowers",
+    "weather": "any except rain",
+    "time": "7 pm - 8 am",
+    "months": {
+      "north": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "20"
   },
   {
-    "name": "giant stag",
-    "price": 10000,
-    "location": "trees",
-    "time": [{
-      "start": 23,
-      "end": 8
-    }]
-  },
-  {
-    "name": "rainbow stag",
-    "price": 6000,
-    "location": "trees",
-    "time": [{
-      "start": 19,
-      "end": 8
-    }]
-  },
-  {
-    "name": "cyclommatus stag",
-    "price": 8000,
-    "location": "trees (coconut)",
-    "time": [{
-      "start": 17,
-      "end": 8
-    }]
-  },
-  {
-    "name": "golden stag",
-    "price": 12000,
-    "location": "trees (coconut)",
-    "time": [{
-      "start": 17,
-      "end": 8
-    }]
-  },
-  {
-    "name": "giraffe stag",
-    "price": 12000,
-    "location": "trees (coconut)",
-    "time": [{
-      "start": 17,
-      "end": 8
-    }]
-  },
-  {
-    "name": "horned dynastid",
-    "price": 1350,
-    "location": "trees",
-    "time": [{
-      "start": 17,
-      "end": 8
-    }]
-  },
-  {
-    "name": "horned atlas",
-    "price": 8000,
-    "location": "trees (coconut)",
-    "time": [{
-      "start": 17,
-      "end": 8
-    }]
-  },
-  {
-    "name": "horned elephant",
-    "price": 8000,
-    "location": "trees (coconut)",
-    "time": [{
-      "start": 17,
-      "end": 8
-    }]
-  },
-  {
-    "name": "horned hercules",
-    "price": 12000,
-    "location": "trees (coconut)",
-    "time": [{
-      "start": 17,
-      "end": 8
-    }]
-  },
-  {
-    "name": "walking stick",
-    "price": 600,
-    "location": "trees",
-    "time": [{
-        "start": 4,
-        "end": 8
-      },
-      {
-        "start": 17,
-        "end": 19
-      }
-    ]
-  },
-  {
-    "name": "walking leaf",
-    "price": 600,
-    "location": "trees (underneath, disguised as leafs)"
-  },
-  {
-    "name": "bagworm",
-    "price": 600,
-    "location": "trees (shaking)"
-  },
-  {
-    "name": "ant",
-    "price": 80,
-    "location": "rotten food"
-  },
-  {
-    "name": "hermit crab",
-    "price": 1000,
-    "location": "beach (disguised as shells)",
-    "time": [{
-      "start": 19,
-      "end": 8
-    }]
-  },
-  {
-    "name": "wharf roach",
+    "number": 43,
+    "name": "ladybug",
+    "image": "https://dodo.ac/np/images/thumb/0/08/Ladybug_NH_Icon.png/64px-Ladybug_NH_Icon.png",
     "price": 200,
-    "location": "beach rocks"
+    "location": "on flowers",
+    "weather": "any except rain",
+    "time": "8 am - 5 pm",
+    "months": {
+      "north": [
+        2,
+        3,
+        4,
+        5,
+        9
+      ],
+      "south": [
+        3,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
   },
   {
+    "number": 44,
+    "name": "tiger beetle",
+    "image": "https://dodo.ac/np/images/thumb/5/58/Tiger_Beetle_NH_Icon.png/64px-Tiger_Beetle_NH_Icon.png",
+    "price": 1500,
+    "location": "on the ground",
+    "weather": "any except rain",
+    "time": "all day",
+    "months": {
+      "north": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "20"
+  },
+  {
+    "number": 45,
+    "name": "jewel beetle",
+    "image": "https://dodo.ac/np/images/thumb/4/43/Jewel_Beetle_NH_Icon.png/64px-Jewel_Beetle_NH_Icon.png",
+    "price": 2400,
+    "location": "on tree stumps",
+    "weather": "any except rain",
+    "time": "all day",
+    "months": {
+      "north": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "20"
+  },
+  {
+    "number": 46,
+    "name": "violin beetle",
+    "image": "https://dodo.ac/np/images/thumb/8/86/Violin_Beetle_NH_Icon.png/64px-Violin_Beetle_NH_Icon.png",
+    "price": 450,
+    "location": "on tree stumps",
+    "weather": "any except rain",
+    "time": "all day",
+    "months": {
+      "north": [
+        4,
+        5,
+        8,
+        9,
+        10
+      ],
+      "south": [
+        2,
+        3,
+        4,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 47,
+    "name": "citrus long-horned beetle",
+    "image": "https://dodo.ac/np/images/thumb/9/9a/Citrus_Long-Horned_Beetle_NH_Icon.png/64px-Citrus_Long-Horned_Beetle_NH_Icon.png",
+    "price": 350,
+    "location": "on tree stumps",
+    "weather": "any except rain",
+    "time": "all day",
+    "months": {
+      "north": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 48,
+    "name": "rosalia batesi beetle",
+    "image": "https://dodo.ac/np/images/thumb/7/7c/Rosalia_Batesi_Beetle_NH_Icon.png/64px-Rosalia_Batesi_Beetle_NH_Icon.png",
+    "price": 3000,
+    "location": "on tree stumps",
+    "weather": "any except rain",
+    "time": "all day",
+    "months": {
+      "north": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        10,
+        11
+      ]
+    },
+    "total_catches": "20"
+  },
+  {
+    "number": 49,
+    "name": "blue weevil beetle",
+    "image": "https://dodo.ac/np/images/thumb/2/20/Blue_Weevil_Beetle_NH_Icon.png/64px-Blue_Weevil_Beetle_NH_Icon.png",
+    "price": 800,
+    "location": "on palm trees",
+    "weather": "any weather",
+    "time": "all day",
+    "months": {
+      "north": [
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 50,
+    "name": "dung beetle",
+    "image": "https://dodo.ac/np/images/thumb/c/c4/Dung_Beetle_NH_Icon.png/64px-Dung_Beetle_NH_Icon.png",
+    "price": 3000,
+    "location": "pushing snowballs",
+    "weather": "any weather",
+    "time": "all day",
+    "months": {
+      "north": [
+        0,
+        1,
+        11
+      ],
+      "south": [
+        5,
+        6,
+        7
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 51,
+    "name": "earth-boring dung beetle",
+    "image": "https://dodo.ac/np/images/thumb/5/53/Earth-Boring_Dung_Beetle_NH_Icon.png/64px-Earth-Boring_Dung_Beetle_NH_Icon.png",
+    "price": 300,
+    "location": "on the ground",
+    "weather": "any weather",
+    "time": "all day",
+    "months": {
+      "north": [
+        6,
+        7,
+        8
+      ],
+      "south": [
+        0,
+        1,
+        2
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 52,
+    "name": "scarab beetle",
+    "image": "https://dodo.ac/np/images/thumb/e/ee/Scarab_Beetle_NH_Icon.png/64px-Scarab_Beetle_NH_Icon.png",
+    "price": 10000,
+    "location": "on trees (any kind)",
+    "weather": "any weather",
+    "time": "11 pm - 8 am",
+    "months": {
+      "north": [
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1
+      ]
+    },
+    "total_catches": "50"
+  },
+  {
+    "number": 53,
+    "name": "drone beetle",
+    "image": "https://dodo.ac/np/images/thumb/4/48/Drone_Beetle_NH_Icon.png/64px-Drone_Beetle_NH_Icon.png",
+    "price": 200,
+    "location": "on trees (any kind)",
+    "weather": "any weather",
+    "time": "all day",
+    "months": {
+      "north": [
+        5,
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1,
+        11
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 54,
+    "name": "goliath beetle",
+    "image": "https://dodo.ac/np/images/thumb/3/3e/Goliath_Beetle_NH_Icon.png/64px-Goliath_Beetle_NH_Icon.png",
+    "price": 8000,
+    "location": "on palm trees",
+    "weather": "any weather",
+    "time": "5 pm - 8 am",
+    "months": {
+      "north": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        11
+      ]
+    },
+    "total_catches": "100"
+  },
+  {
+    "number": 55,
+    "name": "saw stag",
+    "image": "https://dodo.ac/np/images/thumb/0/03/Saw_Stag_NH_Icon.png/64px-Saw_Stag_NH_Icon.png",
+    "price": 2000,
+    "location": "on trees (any kind)",
+    "weather": "any weather",
+    "time": "all day",
+    "months": {
+      "north": [
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 56,
+    "name": "miyama stag",
+    "image": "https://dodo.ac/np/images/thumb/0/0a/Miyama_Stag_NH_Icon.png/64px-Miyama_Stag_NH_Icon.png",
+    "price": 1000,
+    "location": "on trees (any kind)",
+    "weather": "any weather",
+    "time": "all day",
+    "months": {
+      "north": [
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 57,
+    "name": "giant stag",
+    "image": "https://dodo.ac/np/images/thumb/0/08/Giant_Stag_NH_Icon.png/64px-Giant_Stag_NH_Icon.png",
+    "price": 10000,
+    "location": "on trees (any kind)",
+    "weather": "any weather",
+    "time": "11 pm - 8 am",
+    "months": {
+      "north": [
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1
+      ]
+    },
+    "total_catches": "50"
+  },
+  {
+    "number": 58,
+    "name": "rainbow stag",
+    "image": "https://dodo.ac/np/images/thumb/f/f7/Rainbow_Stag_NH_Icon.png/64px-Rainbow_Stag_NH_Icon.png",
+    "price": 6000,
+    "location": "on trees (any kind)",
+    "weather": "any weather",
+    "time": "7 pm - 8 am",
+    "months": {
+      "north": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        11
+      ]
+    },
+    "total_catches": "50"
+  },
+  {
+    "number": 59,
+    "name": "cyclommatus stag",
+    "image": "https://dodo.ac/np/images/thumb/a/a0/Cyclommatus_Stag_NH_Icon.png/64px-Cyclommatus_Stag_NH_Icon.png",
+    "price": 8000,
+    "location": "on palm trees",
+    "weather": "any weather",
+    "time": "5 pm - 8 am",
+    "months": {
+      "north": [
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1
+      ]
+    },
+    "total_catches": "100"
+  },
+  {
+    "number": 60,
+    "name": "golden stag",
+    "image": "https://dodo.ac/np/images/thumb/b/ba/Golden_Stag_NH_Icon.png/64px-Golden_Stag_NH_Icon.png",
+    "price": 12000,
+    "location": "on palm trees",
+    "weather": "any weather",
+    "time": "5 pm - 8 am",
+    "months": {
+      "north": [
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1
+      ]
+    },
+    "total_catches": "100"
+  },
+  {
+    "number": 61,
+    "name": "giraffe stag",
+    "image": "https://dodo.ac/np/images/thumb/c/c7/Giraffe_Stag_NH_Icon.png/64px-Giraffe_Stag_NH_Icon.png",
+    "price": 12000,
+    "location": "on palm trees",
+    "weather": "any weather",
+    "time": "5 pm - 8 am",
+    "months": {
+      "north": [
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1
+      ]
+    },
+    "total_catches": "100"
+  },
+  {
+    "number": 62,
+    "name": "horned dynastid",
+    "image": "https://dodo.ac/np/images/thumb/1/10/Horned_Dynastid_NH_Icon.png/64px-Horned_Dynastid_NH_Icon.png",
+    "price": 1350,
+    "location": "on trees (any kind)",
+    "weather": "any weather",
+    "time": "5 pm - 8 am",
+    "months": {
+      "north": [
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 63,
+    "name": "horned atlas",
+    "image": "https://dodo.ac/np/images/thumb/2/2a/Horned_Atlas_NH_Icon.png/64px-Horned_Atlas_NH_Icon.png",
+    "price": 8000,
+    "location": "on palm trees",
+    "weather": "any weather",
+    "time": "5 pm - 8 am",
+    "months": {
+      "north": [
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1
+      ]
+    },
+    "total_catches": "100"
+  },
+  {
+    "number": 64,
+    "name": "horned elephant",
+    "image": "https://dodo.ac/np/images/thumb/e/ea/Horned_Elephant_NH_Icon.png/64px-Horned_Elephant_NH_Icon.png",
+    "price": 8000,
+    "location": "on palm trees",
+    "weather": "any weather",
+    "time": "5 pm - 8 am",
+    "months": {
+      "north": [
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1
+      ]
+    },
+    "total_catches": "100"
+  },
+  {
+    "number": 65,
+    "name": "horned hercules",
+    "image": "https://dodo.ac/np/images/thumb/2/21/Horned_Hercules_NH_Icon.png/64px-Horned_Hercules_NH_Icon.png",
+    "price": 12000,
+    "location": "on palm trees",
+    "weather": "any weather",
+    "time": "5 pm - 8 am",
+    "months": {
+      "north": [
+        6,
+        7
+      ],
+      "south": [
+        0,
+        1
+      ]
+    },
+    "total_catches": "100"
+  },
+  {
+    "number": 66,
+    "name": "walking stick",
+    "image": "https://dodo.ac/np/images/thumb/5/58/Walking_Stick_NH_Icon.png/64px-Walking_Stick_NH_Icon.png",
+    "price": 600,
+    "location": "on trees (any kind)",
+    "weather": "any weather",
+    "time": "4 am - 8 am & 5 pm - 7 pm",
+    "months": {
+      "north": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "total_catches": "20"
+  },
+  {
+    "number": 67,
+    "name": "walking leaf",
+    "image": "https://dodo.ac/np/images/thumb/b/b9/Walking_Leaf_NH_Icon.png/64px-Walking_Leaf_NH_Icon.png",
+    "price": 600,
+    "location": "disguised under trees",
+    "weather": "any weather",
+    "time": "all day",
+    "months": {
+      "north": [
+        6,
+        7,
+        8
+      ],
+      "south": [
+        0,
+        1,
+        2
+      ]
+    },
+    "total_catches": "20"
+  },
+  {
+    "number": 68,
+    "name": "bagworm",
+    "image": "https://dodo.ac/np/images/thumb/1/17/Bagworm_NH_Icon.png/64px-Bagworm_NH_Icon.png",
+    "price": 600,
+    "location": "shaking trees (hardwood and cedar)",
+    "weather": "any weather",
+    "time": "all day",
+    "months": {
+      "north": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 69,
+    "name": "ant",
+    "image": "https://dodo.ac/np/images/thumb/5/5d/Ant_NH_Icon.png/64px-Ant_NH_Icon.png",
+    "price": 80,
+    "location": "on rotten turnips/candy/lollipops",
+    "weather": "any weather",
+    "time": "all day",
+    "months": {
+      "north": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 70,
+    "name": "hermit crab",
+    "image": "https://dodo.ac/np/images/thumb/6/6b/Hermit_Crab_NH_Icon.png/64px-Hermit_Crab_NH_Icon.png",
+    "price": 1000,
+    "location": "disguised on shoreline",
+    "weather": "any weather",
+    "time": "7 pm - 8 am",
+    "months": {
+      "north": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 71,
+    "name": "wharf roach",
+    "image": "https://dodo.ac/np/images/thumb/1/1f/Wharf_Roach_NH_Icon.png/64px-Wharf_Roach_NH_Icon.png",
+    "price": 200,
+    "location": "on beach rocks",
+    "weather": "any weather",
+    "time": "all day",
+    "months": {
+      "north": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
+  },
+  {
+    "number": 72,
     "name": "fly",
+    "image": "https://dodo.ac/np/images/thumb/1/15/Fly_NH_Icon.png/64px-Fly_NH_Icon.png",
     "price": 60,
-    "location": "trash items"
+    "location": "flying near trash or rotten turnips",
+    "weather": "any weather",
+    "time": "all day",
+    "months": {
+      "north": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
   },
   {
+    "number": 73,
     "name": "mosquito",
+    "image": "https://dodo.ac/np/images/thumb/8/84/Mosquito_NH_Icon.png/64px-Mosquito_NH_Icon.png",
     "price": 130,
     "location": "flying",
-    "time": [{
-      "start": 17,
-      "end": 4
-    }]
+    "weather": "any except rain",
+    "time": "5 pm - 4 am",
+    "months": {
+      "north": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        11
+      ]
+    },
+    "total_catches": "0"
   },
   {
+    "number": 74,
     "name": "flea",
+    "image": "https://dodo.ac/np/images/thumb/8/89/Flea_NH_Icon.png/64px-Flea_NH_Icon.png",
     "price": 70,
-    "location": "villager's heads"
+    "location": "on villagers",
+    "weather": "any weather",
+    "time": "all day",
+    "months": {
+      "north": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
   },
   {
+    "number": 75,
     "name": "snail",
+    "image": "https://dodo.ac/np/images/thumb/e/e9/Snail_NH_Icon.png/64px-Snail_NH_Icon.png",
     "price": 250,
-    "location": "rocks (rainy)"
+    "location": "on rocks and bushes",
+    "weather": "rain only",
+    "time": "all day",
+    "months": {
+      "north": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
   },
   {
+    "number": 76,
     "name": "pill bug",
+    "image": "https://dodo.ac/np/images/thumb/b/b9/Pill_Bug_NH_Icon.png/64px-Pill_Bug_NH_Icon.png",
     "price": 250,
-    "location": "rocks (hitting)",
-    "time": [{
-      "start": 23,
-      "end": 16
-    }]
+    "location": "from hitting rocks",
+    "weather": "any weather",
+    "time": "11 pm - 4 pm",
+    "months": {
+      "north": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11
+      ],
+      "south": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
   },
   {
+    "number": 77,
     "name": "centipede",
+    "image": "https://dodo.ac/np/images/thumb/d/d2/Centipede_NH_Icon.png/64px-Centipede_NH_Icon.png",
     "price": 300,
-    "location": "rocks (hitting)",
-    "time": [{
-      "start": 16,
-      "end": 23
-    }]
+    "location": "from hitting rocks",
+    "weather": "any weather",
+    "time": "4 pm - 11 pm",
+    "months": {
+      "north": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11
+      ],
+      "south": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
   },
   {
+    "number": 78,
     "name": "spider",
-    "price": 480,
-    "location": "trees (shaking)",
-    "time": [{
-      "start": 19,
-      "end": 8
-    }]
+    "image": "https://dodo.ac/np/images/thumb/e/e0/Spider_NH_Icon.png/64px-Spider_NH_Icon.png",
+    "price": 600,
+    "location": "shaking trees",
+    "weather": "any weather",
+    "time": "7 pm - 8 am",
+    "months": {
+      "north": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
   },
   {
+    "number": 79,
     "name": "tarantula",
+    "image": "https://dodo.ac/np/images/thumb/b/b5/Tarantula_NH_Icon.png/64px-Tarantula_NH_Icon.png",
     "price": 8000,
-    "location": "ground",
-    "time": [{
-      "start": 19,
-      "end": 4
-    }]
+    "location": "on the ground",
+    "weather": "any weather",
+    "time": "7 pm - 4 am",
+    "months": {
+      "north": [
+        0,
+        1,
+        2,
+        3,
+        10,
+        11
+      ],
+      "south": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "total_catches": "0"
   },
   {
+    "number": 80,
     "name": "scorpion",
+    "image": "https://dodo.ac/np/images/thumb/9/95/Scorpion_NH_Icon.png/64px-Scorpion_NH_Icon.png",
     "price": 8000,
-    "location": "ground",
-    "time": [{
-      "start": 19,
-      "end": 4
-    }]
+    "location": "on the ground",
+    "weather": "any weather",
+    "time": "7 pm - 4 am",
+    "months": {
+      "north": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "south": [
+        0,
+        1,
+        2,
+        3,
+        10,
+        11
+      ]
+    },
+    "total_catches": "0"
   }
 ]
