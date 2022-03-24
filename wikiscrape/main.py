@@ -59,7 +59,7 @@ def get_fish_data():
 
         number = cells[0].text.strip().lower()
         name = cells[1].text.strip().lower()
-        image_path = cells[2].a['href']
+        image_path = cells[2].a.img['src']
         price = cells[3].text.strip().lower()
         size = cells[4].text.strip().lower()
         location = cells[5].text.strip().lower()
@@ -71,7 +71,7 @@ def get_fish_data():
         fish_data.append({
             'number': int(number),
             'name': name,
-            'image': f'{wiki_url}{image_path}',
+            'image': image_path,
             'price': int(''.join(filter(str.isdigit, price))),
             'size': size,
             'location': location,
@@ -100,7 +100,7 @@ def get_bug_data():
 
         number = cells[0].text.strip().lower()
         name = cells[1].text.strip().lower()
-        image_path = cells[2].a['href']
+        image_path = cells[2].a.img['src']
         price = cells[3].text.strip().lower()
         location = cells[4].text.strip().lower()
         weather = cells[5].text.strip().lower()
@@ -111,7 +111,7 @@ def get_bug_data():
         bug_data.append({
             'number': int(number),
             'name': name,
-            'image': f'{wiki_url}{image_path}',
+            'image': image_path,
             'price': int(''.join(filter(str.isdigit, price))),
             'location': location,
             'weather': weather,
